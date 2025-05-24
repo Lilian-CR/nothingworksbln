@@ -5,7 +5,7 @@
 ![Band Banner](images/banner-1.jpg)
 
 ## 🌐 Live Site
-[xxx](https://your-github-username.github.io/repo-name/)  
+[https://nothingworksbln.netlify.app](https://nothingworksbln.netlify.app)
 
 ---
 
