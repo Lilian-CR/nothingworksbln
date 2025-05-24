@@ -41,16 +41,17 @@
 - [Bandcamp](https://bandcamp.com) embed
 - [Bandsintown Widget](https://bandsintown.com) for tour info
 
----
+--- 
 
 ## 📬 Contact
 
-- 📧 Email: [nothingworks030@gmail.com](mailto:nothingworks030@gmail.com) 
-- 📸 [Instagram](https://www.instagram.com/nothingworksbln/) 
-- 🎵 [Bandcamp](https://nothingworksbln.bandcamp.com/) 
-- 📺 [YouTube](https://www.youtube.com/@NothingWorksBLN/) 
-- 📘 [Facebook](https://www.facebook.com/nothingworksbln/) 
-- 🎧 [Spotify](https://open.spotify.com/intl-pt/artist/1gYycpeQDRB8gqsbMPzzvA?si=g5Q6LbxcT364lAnFQRG0aQ&nd=1&dlsi=ed522c70d22c43c8/) 
+- 📧 [Email](mailto:nothingworks030@gmail.com)
+- 📸 [Instagram](https://www.instagram.com/nothingworksbln/)
+- 🎵 [Bandcamp](https://nothingworksbln.bandcamp.com)
+- 📺 [YouTube](https://www.youtube.com/@NothingWorksBLN)
+- 📘 [Facebook](https://www.facebook.com/nothingworksbln)
+- 🎧 [Spotify](https://open.spotify.com/intl-pt/artist/1gYycpeQDRB8gqsbMPzzvA?si=g5Q6LbxcT364lAnFQRG0aQ&nd=1&dlsi=ed522c70d22c43c8)
+
 
 ---
 
