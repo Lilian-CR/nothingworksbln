@@ -45,7 +45,7 @@
 
 ## 📬 Contact
 
-- 📧 Email: [nothingworks030@gmail.com](mailto:nothingworks030@gmail.com/) 
+- 📧 Email: [nothingworks030@gmail.com](mailto:nothingworks030@gmail.com) 
 - 📸 [Instagram](https://www.instagram.com/nothingworksbln/) 
 - 🎵 [Bandcamp](https://nothingworksbln.bandcamp.com/) 
 - 📺 [YouTube](https://www.youtube.com/@NothingWorksBLN/) 
