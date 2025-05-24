@@ -11,10 +11,10 @@
 
 ## 📁 Project Structure
 
-├── index.html # Main HTML file
+<pre> ``` ├── index.html # Main HTML file
 ├── style.css # Custom styles
 ├── images/ # Band logo, banners, and other images
-├── README.md # Project overview (this file)
+├── README.md # Project overview (this file)``` </pre>
 
 ---
 
