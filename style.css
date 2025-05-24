@@ -66,6 +66,7 @@ nav {
   background-color: #f4f0e9;
   padding: 5em 0;
   text-align: center;
+  scroll-margin-top: 70px; /* 👈 Adjust scroll offset for fixed navbar */
 }
 
 .hero-content {
@@ -188,14 +189,13 @@ nav {
 
 /* Contact Section */
 #contact {
-    background-color: transparent;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0;
-    box-shadow: none;
-    text-align: center;
-  }
-
+  background-color: transparent;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: none;
+  text-align: center;
+}
 
 #contact h2 {
   margin-bottom: 5px;
