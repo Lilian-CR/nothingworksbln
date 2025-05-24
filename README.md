@@ -1,9 +1,10 @@
 # Nothing Works — Band Website
 
 🎸 **Nothing Works** is a Berlin-based underground band blending '90s indie/alternative with modern melodic/post-hardcore. This is an alternative to their Komio website.
+![Band Banner](images/banner-1.jpg)
 
 ## 🌐 Live Site
-[Visit Website](https://your-github-username.github.io/repo-name/)  
+[xxx](https://your-github-username.github.io/repo-name/)  
 
 ---
 
