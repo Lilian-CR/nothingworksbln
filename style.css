@@ -43,6 +43,7 @@ nav {
   color: #aeaeae;
 }
 
+/* Social Icons */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -61,12 +62,12 @@ nav {
   color: #fff;
 }
 
-/* Hero Banner Section */
+/* Hero Banner */
 #billboard {
   background-color: #f4f0e9;
   padding: 5em 0;
   text-align: center;
-  scroll-margin-top: 70px; /* 👈 Adjust scroll offset for fixed navbar */
+  scroll-margin-top: 70px;
 }
 
 .hero-content {
@@ -101,7 +102,7 @@ nav {
   color: #555;
 }
 
-/* Section Base */
+/* General Sections */
 .section {
   padding: 80px 20px;
   text-align: justify;
@@ -119,12 +120,7 @@ nav {
   font-size: 1rem;
 }
 
-.bandsintown-wrapper {
-  max-width: 600px;
-  width: 50%;
-  margin: 0 auto;
-}
-
+/* Bandcamp Embed */
 .iframe-wrapper {
   display: flex;
   justify-content: center;
@@ -134,18 +130,25 @@ nav {
 
 .iframe-wrapper iframe {
   width: 90%;
-  height: 600px; /* default for desktop/tablet */
+  height: 600px;
   border: none;
+  border-radius: 0;
 }
 
-/* Mobile: force taller height */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .iframe-wrapper iframe {
     height: 800px;
   }
 }
 
-/* Artistic Resume Layout */
+/* Bandsintown Widget */
+.bandsintown-wrapper {
+  max-width: 600px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Artistic Resume */
 .resume-section {
   background-color: #e5ddd4;
   padding: 80px 20px;
@@ -171,7 +174,7 @@ nav {
 .resume-images img {
   width: 89%;
   height: auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .resume-text {
@@ -190,7 +193,7 @@ nav {
   max-width: 600px;
 }
 
-/* Background Color Variations */
+/* Background Alternating */
 .section:nth-child(odd) {
   background-color: #b5aa96;
 }
