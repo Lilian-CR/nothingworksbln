@@ -139,7 +139,7 @@ nav {
 /* Mobile: fixed tall height, no scroll */
 @media (max-width: 480px) {
   .iframe-wrapper iframe {
-    height: 800px;  /* Adjust this if part of the player is still hidden */
+    height: 1000px;  /* Adjust this if part of the player is still hidden */
   }
 }
 
