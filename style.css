@@ -126,18 +126,20 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 5px 0;
+  overflow: hidden;
 }
 
 .iframe-wrapper iframe {
   width: 90%;
-  height: 600px;
+  height: 600px;  /* Default for desktop */
   border: none;
   border-radius: 0;
 }
 
-@media (max-width: 768px) {
+/* Mobile: fixed tall height, no scroll */
+@media (max-width: 480px) {
   .iframe-wrapper iframe {
-    height: 800px;
+    height: 800px;  /* Adjust this if part of the player is still hidden */
   }
 }
 
