@@ -134,15 +134,14 @@ nav {
 
 .iframe-wrapper iframe {
   width: 90%;
-  height: 400px; /* default for desktop/tablet */
-  border-radius: 18px;
+  height: 600px; /* default for desktop/tablet */
   border: none;
 }
 
 /* Mobile: force taller height */
 @media (max-width: 480px) {
   .iframe-wrapper iframe {
-    height: 600px;
+    height: 800px;
   }
 }
 
