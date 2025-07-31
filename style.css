@@ -71,20 +71,20 @@ nav {
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
 .hero-logo {
-  width: 250px;
-  max-width: 150%;
+  width: 975px;
+  max-width: 100%;
   height: auto;
   margin-bottom: 1px;
 }
 
 .hero-image {
   width: 100%;
-  max-width: 720px;
+  max-width: 750px;
   height: auto;
   margin-bottom: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
