@@ -199,46 +199,12 @@ nav {
   background-color: #7a6b52;
 }
 
-/* Contact Section */
-#contact {
-  background-color: transparent;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0;
-  box-shadow: none;
-  text-align: center;
-}
-
-#contact h2 {
-  margin-bottom: 5px;
-  font-size: 1.8rem;
-  color: #5b5757;
-}
-
-#contact p {
-  font-size: 1rem;
-  margin-bottom: 0;
-  color: #555;
-}
-
-#contact a {
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 1px solid #ccc;
-}
-
-#contact a:hover {
-  color: #626262;
-  border-bottom: 1px solid #403f3e;
-}
-
 /* Footer */
 footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9rem;
-  background-color: #CFCFCF;
+  background-color: #FFBD47;
   color: #fff;
 }
 
