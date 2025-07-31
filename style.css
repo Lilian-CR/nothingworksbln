@@ -120,22 +120,6 @@ nav {
   font-size: 1rem;
 }
 
-/* Bandcamp Embed */
-.iframe-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 0;
-  overflow: hidden;
-}
-
-.iframe-wrapper iframe {
-  width: 90%;
-  height: 600px;
-  border: none;
-  border-radius: 0;
-}
-
 @media (max-width: 480px) {
   .iframe-wrapper iframe {
     height: 1000px;
@@ -254,7 +238,7 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9rem;
-  background-color: #373636;
+  background-color: #FFBD47;
   color: #fff;
 }
 
