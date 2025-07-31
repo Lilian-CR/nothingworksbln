@@ -1,4 +1,4 @@
-já/* Basic Reset */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -131,15 +131,14 @@ nav {
 
 .iframe-wrapper iframe {
   width: 90%;
-  height: 600px;  /* Default for desktop */
+  height: 600px;
   border: none;
   border-radius: 0;
 }
 
-/* Mobile: fixed tall height, no scroll */
 @media (max-width: 480px) {
   .iframe-wrapper iframe {
-    height: 1000px;  /* Adjust this if part of the player is still hidden */
+    height: 1000px;
   }
 }
 
@@ -150,7 +149,7 @@ nav {
   margin: 0 auto;
 }
 
-/* Live */
+/* Live Section */
 .live-section {
   background-color: #e5ddd4;
   padding: 80px 20px;
@@ -195,13 +194,25 @@ nav {
   max-width: 600px;
 }
 
-/* Background Alternating */
-.section:nth-child(odd) {
-  background-color: #b5aa96;
+/* New Section Background Palette */
+.section:nth-of-type(1) {
+  background-color: #f4e3b0;
 }
 
-.section:nth-child(even) {
-  background-color: #9b9286;
+.section:nth-of-type(2) {
+  background-color: #dbc493;
+}
+
+.section:nth-of-type(3) {
+  background-color: #bfa87d;
+}
+
+.section:nth-of-type(4) {
+  background-color: #9d8769;
+}
+
+.section:nth-of-type(5) {
+  background-color: #7a6b52;
 }
 
 /* Contact Section */
