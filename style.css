@@ -71,7 +71,7 @@ nav {
 }
 
 .hero-content {
-  max-width: 850px;
+  max-width: 975px;
   margin: 0 auto;
 }
 
@@ -84,7 +84,7 @@ nav {
 
 .hero-image {
   width: 100%;
-  max-width: 750px;
+  max-width: 975px;
   height: auto;
   margin-bottom: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
