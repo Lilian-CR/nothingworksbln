@@ -194,10 +194,11 @@ nav {
 /* Footer */
 footer {
   text-align: center;
-  padding: 10px;
-  font-size: 0.9rem;
+  padding: 5px 10px;
+  font-size: 0.85rem;
   background-color: #f4f0e9;
   color: #000000;
+  line-height: 1.2;
 }
 
 /* Responsive */
