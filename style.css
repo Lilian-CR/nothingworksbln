@@ -180,15 +180,15 @@ nav {
 
 /* Section Background Palette */
 #bio {
-  background-color: #f4e3b0;
-}
-
-#music {
   background-color: #FFBD47;
 }
 
+#music {
+  background-color: #f4f0e9;
+}
+
 #tour {
-  background-color: #f4e3b0;
+  background-color: #FFBD47;
 }
 
 /* Footer */
@@ -196,8 +196,8 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9rem;
-  background-color: #FFBD47;
-  color: #fff;
+  background-color: #f4f0e9;
+  color: #000000;
 }
 
 /* Responsive */
