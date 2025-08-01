@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -120,10 +125,9 @@ nav {
   font-size: 1rem;
 }
 
-@media (max-width: 480px) {
-  .iframe-wrapper iframe {
-    height: 1000px;
-  }
+.section:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 40px;
 }
 
 /* Bandsintown Widget */
@@ -194,11 +198,13 @@ nav {
 /* Footer */
 footer {
   text-align: center;
-  padding: 5px 10px;
-  font-size: 0.85rem;
+  padding: 4px 10px;
+  font-size: 0.8rem;
   background-color: #f4f0e9;
   color: #000000;
   line-height: 1.2;
+  margin: 0;
+  border-top: 1px solid #ddd;
 }
 
 /* Responsive */
