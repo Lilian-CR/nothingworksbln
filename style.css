@@ -178,25 +178,17 @@ nav {
   max-width: 600px;
 }
 
-/* New Section Background Palette */
-.section:nth-of-type(1) {
+/* Section Background Palette */
+#bio {
   background-color: #f4e3b0;
 }
 
-.section:nth-of-type(2) {
+#music {
   background-color: #dbc493;
 }
 
-.section:nth-of-type(3) {
+#tour {
   background-color: #bfa87d;
-}
-
-.section:nth-of-type(4) {
-  background-color: #9d8769;
-}
-
-.section:nth-of-type(5) {
-  background-color: #7a6b52;
 }
 
 /* Footer */
