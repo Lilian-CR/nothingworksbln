@@ -113,6 +113,7 @@ nav {
 .section p {
   max-width: 700px;
   margin: 0 auto 30px;
+  text-align: justify;
 }
 
 /* LIVE Section */
@@ -176,6 +177,20 @@ nav {
 }
 .live-gallery img:hover {
   transform: scale(1.02);
+}
+
+/* Background Palette */
+#bio {
+  background-color: #FFBD47;
+}
+#music {
+  background-color: #f4f0e9;
+}
+#live {
+  background-color: #e5ddd4;
+}
+#tour {
+  background-color: transparent;
 }
 
 /* Footer */
