@@ -130,6 +130,81 @@ nav {
   padding-bottom: 40px;
 }
 
+/* --- LIVE SECTION FULL STYLING --- */
+
+.live-section {
+  background-color: #e5ddd4;
+  padding: 80px 20px;
+}
+
+/* Top part: Two-column layout */
+.two-column-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* Left column: stacked vertical images */
+.portrait-stack {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.portrait-stack img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Right column: text + credits + video */
+.live-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.live-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.live-text p {
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Optional if you want more spacing around credits */
+.photo-credits {
+  font-size: 0.9rem;
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* YouTube embed */
+.live-video {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.live-video iframe {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+/* Bottom gallery row */
 .live-gallery {
   margin-top: 40px;
   display: flex;
@@ -155,8 +230,18 @@ img.clickable {
   cursor: zoom-in;
 }
 
-/* Responsive tweaks */
+/* Responsive for tablets and phones */
 @media (max-width: 768px) {
+  .two-column-layout {
+    flex-direction: column;
+  }
+
+  .portrait-stack,
+  .live-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
   .live-gallery img {
     width: 48%;
   }
@@ -167,6 +252,7 @@ img.clickable {
     width: 100%;
   }
 }
+
 
 /* Bandsintown Widget */
 .bandsintown-wrapper {
