@@ -221,19 +221,16 @@ nav {
   right: 10px;
 }
 
-/* === MOBILE GALLERY === */
+/* === MOBILE GALLERY (only shows image 06) === */
 .mobile-gallery {
   display: none;
   max-width: 700px;
   margin: 20px auto 40px;
   padding: 0 10px;
-  gap: 20px;
 }
 .mobile-gallery img {
   width: 100%;
-  aspect-ratio: 4 / 3;
   object-fit: cover;
-  margin-bottom: 15px;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
@@ -244,7 +241,7 @@ nav {
   .mobile-gallery {
     display: block;
   }
-  .mobile-gallery img:not(:first-child) {
+  .mobile-gallery img:not([alt="Live 6"]) {
     display: none;
   }
 }
