@@ -246,7 +246,7 @@ nav {
 .mobile-pic-06 img {
   max-width: 350px; /* Match 01 & 02 */
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   aspect-ratio: 4 / 3;
   border-radius: 4px;
