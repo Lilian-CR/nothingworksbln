@@ -30,7 +30,7 @@ a:hover {
   padding: 10px;
   position: absolute;
   top: 15px;
-  right: 15px; /* ✅ moved to the right */
+  right: 15px; 
   z-index: 2000;
   cursor: pointer;
 }
@@ -48,11 +48,11 @@ a:hover {
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    background: #CFCFCF;
+    background: #FFBD47;
     position: absolute;
     top: 60px;
-    right: 0; /* ✅ align dropdown under burger */
-    width: 33%; /* ✅ 33% width */
+    right: 0; 
+    width: 33%; 
     z-index: 1500;
     padding: 10px;
   }
