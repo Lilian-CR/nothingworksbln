@@ -191,9 +191,8 @@ nav {
 }
 .slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
@@ -236,11 +235,13 @@ nav {
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 .mobile-gallery img:nth-child(1) {
-  aspect-ratio: 4 / 3; /* live_06 */
+  aspect-ratio: 4 / 3; /* live_03 */
 }
-.mobile-gallery img:nth-child(n+2) {
-  aspect-ratio: 4 / 3; /* landscape 3:4 reversed */
-  transform: rotate(0deg); /* optional fix if needed */
+.mobile-gallery img:nth-child(2) {
+  aspect-ratio: 4 / 3; /* live_04 */
+}
+.mobile-gallery img:nth-child(3) {
+  aspect-ratio: 4 / 3; /* live_05 */
 }
 @media (max-width: 768px) {
   .live-gallery-slider {
