@@ -130,6 +130,44 @@ nav {
   padding-bottom: 40px;
 }
 
+.live-gallery {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.live-gallery img {
+  width: calc(25% - 12px); /* 4 equal parts */
+  object-fit: cover;
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.live-gallery img:hover {
+  transform: scale(1.02);
+}
+
+img.clickable {
+  cursor: zoom-in;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .live-gallery img {
+    width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .live-gallery img {
+    width: 100%;
+  }
+}
+
 /* Bandsintown Widget */
 .bandsintown-wrapper {
   max-width: 600px;
@@ -137,50 +175,7 @@ nav {
   margin: 0 auto;
 }
 
-/* Live Section */
-.live-section {
-  background-color: #e5ddd4;
-  padding: 80px 20px;
-}
 
-.live-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 30px;
-}
-
-.live-images {
-  flex: 1 1 40%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.live-images img {
-  width: 89%;
-  height: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.live-text {
-  flex: 1 1 50%;
-}
-
-.live-text h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.live-text p {
-  font-size: 1rem;
-  text-align: justify;
-  max-width: 600px;
-}
 
 /* Section Background Palette */
 #bio {
