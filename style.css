@@ -172,27 +172,29 @@ nav {
   height: 100%;
 }
 
-/* === SLIDER (Desktop) === */
+/* === SLIDER (Desktop Only) === */
 .live-gallery-slider {
   position: relative;
   overflow: hidden;
   max-width: 900px;
-  max-height: 675px;
   margin: 40px auto;
+  aspect-ratio: 4 / 3;
 }
 .slide-track {
   display: flex;
+  height: 100%;
   transition: transform 0.5s ease;
 }
 .slide {
   min-width: 100%;
   flex-shrink: 0;
   padding: 10px;
+  height: 100%;
 }
 .slide img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
@@ -219,7 +221,7 @@ nav {
   right: 10px;
 }
 
-/* === Mobile fallback gallery === */
+/* === MOBILE GALLERY === */
 .mobile-gallery {
   display: none;
   max-width: 700px;
@@ -229,27 +231,21 @@ nav {
 }
 .mobile-gallery img {
   width: 100%;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   margin-bottom: 15px;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-}
-.mobile-gallery img:nth-child(1) {
-  aspect-ratio: 4 / 3; /* live_03 */
-}
-.mobile-gallery img:nth-child(2) {
-  aspect-ratio: 4 / 3; /* live_04 */
-}
-.mobile-gallery img:nth-child(3) {
-  aspect-ratio: 4 / 3; /* live_05 */
 }
 @media (max-width: 768px) {
   .live-gallery-slider {
     display: none;
   }
   .mobile-gallery {
-    display: flex;
-    flex-direction: column;
+    display: block;
+  }
+  .mobile-gallery img:not(:first-child) {
+    display: none;
   }
 }
 
