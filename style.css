@@ -205,6 +205,18 @@ nav {
   background-color: #f4f0e9;
 }
 
+/* Bandsintown Widget Wrapper */
+.bandsintown-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.bandsintown-wrapper iframe,
+.bandsintown-wrapper .bit-widget-initializer {
+  width: 100%;
+}
+
 /* Footer */
 footer {
   text-align: center;
