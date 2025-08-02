@@ -21,4 +21,4 @@ prevBtn.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', updateSlider);
-
+window.addEventListener('load', updateSlider);
