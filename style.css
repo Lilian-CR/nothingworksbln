@@ -12,13 +12,30 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* Links */
-a {
+/* Navbar Links Only */
+nav .navbar-nav a {
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
-a:hover {
+nav .navbar-nav a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+/* All other sections use white links */
+#bio a,
+#music a,
+#live a,
+#tour a,
+footer a {
+  color: white;
+}
+#bio a:hover,
+#music a:hover,
+#live a:hover,
+#tour a:hover,
+footer a:hover {
   color: #ddd;
   text-decoration: underline;
 }
