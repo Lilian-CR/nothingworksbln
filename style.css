@@ -30,14 +30,15 @@ a:hover {
   padding: 10px;
   position: absolute;
   top: 15px;
-  right: 15px; /* 
+  right: 15px; /* ✅ moved to the right */
   z-index: 2000;
   cursor: pointer;
 }
-
 #menu-toggle {
   display: none;
 }
+
+/* Mobile Styles */
 @media (max-width: 768px) {
   .burger {
     display: block;
@@ -46,12 +47,12 @@ a:hover {
   nav .navbar-nav {
     display: none;
     flex-direction: column;
-    align-items: flex-start; 
-    background: #FFBD47;
+    align-items: flex-start;
+    background: #CFCFCF;
     position: absolute;
     top: 60px;
-    right: 0; 
-    width: 33%; 
+    right: 0; /* ✅ align dropdown under burger */
+    width: 33%; /* ✅ 33% width */
     z-index: 1500;
     padding: 10px;
   }
@@ -213,7 +214,6 @@ nav {
   margin: 40px auto;
   text-align: center;
 }
-
 .bandsintown-wrapper iframe,
 .bandsintown-wrapper .bit-widget-initializer {
   width: 100%;
