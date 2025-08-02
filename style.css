@@ -189,7 +189,7 @@ nav {
   height: 100%;
 }
 
-/* === SLIDER (Desktop Only) === */
+/* Desktop slider */
 .live-gallery-slider {
   position: relative;
   overflow: hidden;
@@ -238,28 +238,42 @@ nav {
   right: 10px;
 }
 
-/* === MOBILE GALLERY (only shows image 06) === */
-.mobile-gallery {
+/* Mobile layout */
+.mobile-pic-06 {
   display: none;
-  max-width: 700px;
-  margin: 20px auto 40px;
-  padding: 0 10px;
 }
-.mobile-gallery img {
+.mobile-pic-06 img {
   width: 100%;
   object-fit: cover;
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+.mobile-gallery-after {
+  display: none;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 10px;
+}
+.mobile-gallery-after img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  margin-bottom: 15px;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
+
 @media (max-width: 768px) {
   .live-gallery-slider {
     display: none;
   }
-  .mobile-gallery {
+  .mobile-pic-06 {
     display: block;
   }
-  .mobile-gallery img:not([alt="Live 6"]) {
-    display: none;
+  .mobile-gallery-after {
+    display: block;
   }
 }
 
