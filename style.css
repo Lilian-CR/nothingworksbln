@@ -18,6 +18,16 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ddd; /* Or any hover color you like */
+  text-decoration: underline;
+}
+
 /* Navigation Bar */
 nav {
   background-color: #CFCFCF;
