@@ -118,7 +118,13 @@ nav {
 
 /* LIVE Section */
 .live-section {
-  background-color: #e5ddd4;
+  background-color: #FFBD47;
+  padding: 80px 20px;
+}
+.live-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .live-wrapper {
   display: flex;
@@ -130,21 +136,26 @@ nav {
 }
 .live-images.portrait-stack {
   flex: 1 1 40%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .live-images img {
   width: 100%;
-  max-height: 500px;
+  max-height: 480px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .live-text {
   flex: 1 1 55%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.live-text p {
+  text-align: justify;
 }
 .video-container {
   width: 100%;
@@ -187,7 +198,7 @@ nav {
   background-color: #f4f0e9;
 }
 #live {
-  background-color: #e5ddd4;
+  background-color: #FFBD47;
 }
 #tour {
   background-color: transparent;
