@@ -138,55 +138,36 @@ nav {
 
 .live-wrapper {
   display: flex;
-  flex-wrap: wrap;
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 30px;  /* 👈 bottom margin added to group the bottom row better */
+  flex-wrap: nowrap;    /* 👈 force 2 columns on large screens */
   align-items: flex-start;
 }
 
 .live-images.portrait-stack {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;  /* 👈 distribute images better */
+  gap: 30px;
   flex: 1 1 40%;
-}
-
-.live-images img {
-  width: 100%;
-  height: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .live-text {
   flex: 1 1 55%;
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* 👈 vertically spread content */
+  gap: 30px;
 }
 
-.live-text h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.live-text p {
-  font-size: 1rem;
-  text-align: justify;
-}
-
-.photo-credits {
-  font-size: 0.9rem;
-  margin-top: 20px;
-  text-align: left;
-}
-
+/* Adjust video size to align nicely with lower image */
 .video-container {
-  position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  margin-top: 30px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  margin-top: auto;
 }
 
 .video-container iframe {
@@ -197,18 +178,16 @@ nav {
   height: 100%;
 }
 
-/* Bottom gallery */
+/* --- Bottom Gallery --- */
 .live-gallery {
-  margin-top: 50px;
+  margin-top: 20px; /* ⬅ tighter spacing */
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  flex-wrap: nowrap;
   gap: 15px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  flex-wrap: nowrap;
 }
 
 .live-gallery a {
@@ -220,8 +199,8 @@ nav {
 .live-gallery img {
   width: 100%;
   height: auto;
-  object-fit: cover;
   display: block;
+  object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
 }
@@ -230,21 +209,26 @@ nav {
   transform: scale(1.02);
 }
 
-
-/* Responsive tweaks */
+/* Responsive fallback */
 @media (max-width: 768px) {
   .live-wrapper {
     flex-direction: column;
   }
 
-  .live-gallery img {
-    width: 48%;
+  .live-gallery {
+    flex-wrap: wrap;
+  }
+
+  .live-gallery a {
+    flex: 1 1 48%;
+    max-width: 48%;
   }
 }
 
 @media (max-width: 480px) {
-  .live-gallery img {
-    width: 100%;
+  .live-gallery a {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
