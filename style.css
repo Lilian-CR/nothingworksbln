@@ -273,8 +273,12 @@ nav {
   background-color: #f4f0e9;
 }
 
-#tour {
+#live {
   background-color: #FFBD47;
+}
+
+#tour {
+  background-color:  #f4f0e9;
 }
 
 /* Footer */
@@ -282,7 +286,7 @@ footer {
   text-align: center;
   padding: 4px 10px;
   font-size: 0.8rem;
-  background-color: #f4f0e9;
+  background-color: #FFBD47;
   color: #000000;
   line-height: 2;
   margin: 0;
