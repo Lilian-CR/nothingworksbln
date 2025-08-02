@@ -172,7 +172,7 @@ nav {
   height: 100%;
 }
 
-/* SLIDER with JS */
+/* === SLIDER (Desktop) === */
 .live-gallery-slider {
   position: relative;
   overflow: hidden;
@@ -190,7 +190,7 @@ nav {
 }
 .slide img {
   width: 100%;
-  max-height: 900px;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -216,6 +216,32 @@ nav {
 }
 .slider-btn.next {
   right: 10px;
+}
+
+/* === Mobile fallback gallery === */
+.mobile-gallery {
+  display: none;
+  max-width: 700px;
+  margin: 20px auto 40px;
+  padding: 0 10px;
+  gap: 20px;
+}
+.mobile-gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+@media (max-width: 768px) {
+  .live-gallery-slider {
+    display: none;
+  }
+  .mobile-gallery {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Bandsintown */
