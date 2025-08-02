@@ -131,90 +131,78 @@ nav {
 }
 
 /* --- LIVE SECTION FULL STYLING --- */
-
 .live-section {
   background-color: #e5ddd4;
   padding: 80px 20px;
 }
 
-/* Top part: Two-column layout */
-.two-column-layout {
+.live-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 
-/* Left column: stacked vertical images */
-.portrait-stack {
-  flex: 1 1 40%;
+.live-images.portrait-stack {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+  flex: 1 1 40%;
 }
 
-.portrait-stack img {
+.live-images img {
   width: 100%;
   height: auto;
-  object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Right column: text + credits + video */
 .live-text {
-  flex: 1 1 50%;
+  flex: 1 1 55%;
   max-width: 600px;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .live-text h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .live-text p {
   font-size: 1rem;
   text-align: justify;
-  margin-bottom: 20px;
 }
 
-/* Optional if you want more spacing around credits */
-.photo-credits {
-  font-size: 0.9rem;
+/* Video Container for responsive iframe */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
   margin-top: 30px;
-  text-align: left;
 }
 
-/* YouTube embed */
-.live-video {
-  margin-top: 40px;
-  text-align: center;
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.live-video iframe {
-  max-width: 100%;
-  height: auto;
-  border: none;
-}
-
-/* Bottom gallery row */
+/* Bottom Gallery */
 .live-gallery {
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
 }
 
 .live-gallery img {
-  width: calc(25% - 12px); /* 4 equal parts */
+  width: calc(25% - 12px);
   object-fit: cover;
   height: auto;
   cursor: pointer;
@@ -226,20 +214,10 @@ nav {
   transform: scale(1.02);
 }
 
-img.clickable {
-  cursor: zoom-in;
-}
-
-/* Responsive for tablets and phones */
+/* Responsive */
 @media (max-width: 768px) {
-  .two-column-layout {
+  .live-wrapper {
     flex-direction: column;
-  }
-
-  .portrait-stack,
-  .live-text {
-    flex: 1 1 100%;
-    max-width: 100%;
   }
 
   .live-gallery img {
@@ -253,15 +231,12 @@ img.clickable {
   }
 }
 
-
 /* Bandsintown Widget */
 .bandsintown-wrapper {
   max-width: 600px;
   width: 50%;
   margin: 0 auto;
 }
-
-
 
 /* Section Background Palette */
 #bio {
