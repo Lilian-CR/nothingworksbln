@@ -138,19 +138,27 @@ nav {
 
 .live-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto 30px;  /* 👈 bottom margin added to group the bottom row better */
-  flex-wrap: nowrap;    /* 👈 force 2 columns on large screens */
+  margin: 0 auto 30px;
   align-items: flex-start;
 }
 
 .live-images.portrait-stack {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;  /* 👈 distribute images better */
-  gap: 30px;
+  gap: 20px;
   flex: 1 1 40%;
+  max-width: 350px;
+}
+
+.live-images img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .live-text {
@@ -158,11 +166,21 @@ nav {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;  /* 👈 vertically spread content */
-  gap: 30px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-/* Adjust video size to align nicely with lower image */
+.live-text h2 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.live-text p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Adjust video size */
 .video-container {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -180,19 +198,19 @@ nav {
 
 /* --- Bottom Gallery --- */
 .live-gallery {
-  margin-top: 20px; /* ⬅ tighter spacing */
+  margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  flex-wrap: nowrap;
 }
 
 .live-gallery a {
-  flex: 1 1 22%;
-  max-width: 22%;
+  flex: 1 1 calc(25% - 15px);
+  max-width: calc(25% - 15px);
   text-decoration: none;
 }
 
@@ -215,13 +233,14 @@ nav {
     flex-direction: column;
   }
 
-  .live-gallery {
-    flex-wrap: wrap;
-  }
-
   .live-gallery a {
     flex: 1 1 48%;
     max-width: 48%;
+  }
+
+  .live-images.portrait-stack {
+    max-width: 100%;
+    align-items: center;
   }
 }
 
@@ -264,7 +283,7 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-/* Responsive */
+/* Responsive Navigation */
 @media (max-width: 768px) {
   .navbar-nav {
     flex-direction: column;
