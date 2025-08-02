@@ -37,7 +37,6 @@ a:hover {
 #menu-toggle {
   display: none;
 }
-
 @media (max-width: 768px) {
   .burger {
     display: block;
@@ -124,6 +123,11 @@ nav {
   background-color: #FFBD47;
   padding: 80px 20px;
 }
+.live-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
 .live-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +172,7 @@ nav {
   height: 100%;
 }
 
-/* === SLIDER (with JS buttons) === */
+/* SLIDER with JS */
 .live-gallery-slider {
   position: relative;
   overflow: hidden;
