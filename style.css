@@ -45,13 +45,14 @@ a:hover {
   nav .navbar-nav {
     display: none;
     flex-direction: column;
-    align-items: center;
-    background: #CFCFCF;
+    align-items: flex-start; /* optional for left-aligned items */
+    background: #FFBD47;
     position: absolute;
     top: 60px;
-    left: 0;
-    width: 100%;
+    right: 0; /* ✅ align it under the burger menu */
+    width: 33%; /* ✅ make it 33% wide */
     z-index: 1500;
+    padding: 10px;
   }
 
   #menu-toggle:checked + .burger + nav .navbar-nav {
