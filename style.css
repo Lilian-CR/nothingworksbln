@@ -19,6 +19,15 @@ nav .navbar-nav a,
   text-decoration: none;
   font-weight: bold;
 }
+
+#music a {
+  color: #FFBD47; /* match background */
+}
+#music a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
 nav .navbar-nav a:hover,
 #tour a:hover {
   color: #ddd;
@@ -27,7 +36,6 @@ nav .navbar-nav a:hover,
 
 /* All other sections use white links */
 #bio a,
-#music a,
 #live a,
 footer a {
   color: white;
