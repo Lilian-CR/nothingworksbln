@@ -28,9 +28,7 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-/* ================================
-   NAVBAR
-   ================================ */
+/* NAVBAR */
 
 nav {
   background-color: var(--gray);
@@ -100,9 +98,7 @@ nav .navbar-nav a:hover,
   nav .navbar-nav a { padding: 8px 10px; width: 100%; }
 }
 
-/* ================================
-   SOCIAL ICONS
-   ================================ */
+/* SOCIAL ICONS */
 
 .social-icons {
   display: flex;
@@ -129,9 +125,7 @@ nav .navbar-nav a:hover,
   background: #00000015; /* subtle hover pad */
 }
 
-/* ================================
-   BILLBOARD / HERO
-   ================================ */
+/* BILLBOARD / HERO */
 
 #billboard {
   background-color: var(--cream);
@@ -147,9 +141,7 @@ nav .navbar-nav a:hover,
   margin-bottom: 10px;
 }
 
-/* ================================
-   SECTIONS (Generic)
-   ================================ */
+/* SECTIONS */
 
 .section {
   padding: 80px 20px;
@@ -188,9 +180,7 @@ footer a:hover {
 #live { background-color: var(--yellow); }
 #tour { background-color: var(--cream); }
 
-/* ================================
-   LIVE SECTION
-   ================================ */
+/* LIVE SECTION */
 
 .live-section {
   background-color: var(--yellow);
@@ -330,9 +320,7 @@ footer a:hover {
   .mobile-gallery-after { display: block; }
 }
 
-/* ================================
-   BANDSINTOWN
-   ================================ */
+/* BANDSINTOWN / Tour Dates */
 
 .bandsintown-wrapper {
   max-width: 600px;
@@ -344,9 +332,7 @@ footer a:hover {
   width: 100%;
 }
 
-/* ================================
-   EP RELEASE
-   ================================ */
+/* EP RELEASE */
 
 .ep-release {
   display: flex;
@@ -389,9 +375,7 @@ footer a:hover {
   .ep-text h3 { font-size: 1.3rem; }
 }
 
-/* ================================
-   FOOTER
-   ================================ */
+/* FOOTER */
 
 footer {
   text-align: center;
@@ -403,9 +387,7 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-/* ================================
-   BACK TO TOP
-   ================================ */
+/* BACK TO TOP */
 
 .back-to-top {
   position: fixed;
@@ -425,9 +407,7 @@ footer {
 }
 .back-to-top:hover { opacity: 0.85; }
 
-/* ================================
-   MOTION PREFERENCES
-   ================================ */
+/* MOTION PREFERENCES */
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
