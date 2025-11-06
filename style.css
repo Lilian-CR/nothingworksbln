@@ -32,13 +32,23 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-/* NAVBAR */
-
-nav {
-  background-color: var(--gray);
-  padding: 10px 0;
+/* topbar wraps burger + nav + icons */
+.topbar {
   position: sticky;
   top: 0;
+  z-index: 1000;
+  background: var(--yellow);
+  display: flex;
+  align-items: center;          /* vertical centering for burger & icons */
+  justify-content: left;      
+  height: 56px;                 /* consistent line height */
+}
+
+/* NAVBAR (nav used only for the dropdown list) */
+nav {
+  background-color: transparent; /* keep bar yellow */
+  padding: 0;                    /* bar height controlled by .topbar */
+  position: relative;            /* anchor for the dropdown */
   z-index: 1000;
 }
 
@@ -61,18 +71,14 @@ nav .navbar-nav a:hover,
   text-decoration: underline;
 }
 
-/* Burger Menu */
+/* Burger Menu — vertically centered via flex (no absolute) */
 .burger {
-  transform: translateY(-50%);
   display: none;
   font-size: 2rem;
   padding: 10px;
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  z-index: 2000;
   cursor: pointer;
   line-height: 1;
+  margin-left: auto;            /* push burger to right edge */
 }
 #menu-toggle { display: none; }
 
@@ -85,7 +91,7 @@ nav .navbar-nav a:hover,
     align-items: flex-start;
     background: var(--yellow);
     position: absolute;
-    top: 60px;
+    top: 56px;                  /* sit just below the topbar */
     right: 0;
     width: 33%;
     min-width: 220px;
@@ -106,16 +112,15 @@ nav .navbar-nav a:hover,
 }
 
 /* SOCIAL ICONS */
-
 .social-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;          /* same vertical center as burger */
   gap: 8px;
-  margin: 10px 0;
+  margin: 0;                    /* topbar controls the height */
   padding-right: 40px;
-  flex-wrap: nowrap;       /* no line breaks */
-  scrollbar-width: none;   /* hides scrollbar in Firefox */
+  flex-wrap: nowrap;            /* no line breaks */
+  scrollbar-width: none;        /* hides scrollbar in Firefox */
 }
 
 .social-icons a {
@@ -138,20 +143,19 @@ nav .navbar-nav a:hover,
 @media (max-width: 480px) {
   .social-icons {
     flex-wrap: nowrap;                /* all in one line */
-    justify-content: left;          
+    justify-content: left;
     gap: 3px;                         /* tighter spacing */
-    padding: 6px 50px 6px 10px;       /* space for burger */
+    padding: 0 50px 0 10px;           /* space for burger; vertically centered by .topbar */
   }
 
   .social-icons a {
-    width: 36px;                      
+    width: 36px;
     height: 36px;
     font-size: 1.2rem;
   }
 }
 
 /* BILLBOARD / HERO */
-
 #billboard {
   background-color: var(--cream);
   text-align: center;
@@ -167,7 +171,6 @@ nav .navbar-nav a:hover,
 }
 
 /* SECTIONS */
-
 .section {
   padding: 80px 20px;
 }
@@ -204,7 +207,6 @@ footer a:hover {
 #tour { background-color: var(--cream); }
 
 /* LIVE SECTION */
-
 .live-section {
   background-color: var(--yellow);
   padding: 80px 20px;
@@ -346,7 +348,6 @@ footer a:hover {
 }
 
 /* BANDSINTOWN / Tour Dates */
-
 .bandsintown-wrapper {
   max-width: 600px;
   margin: 40px auto;
@@ -358,7 +359,6 @@ footer a:hover {
 }
 
 /* EP RELEASE */
-
 .ep-release {
   display: flex;
   flex-wrap: wrap;
@@ -410,7 +410,6 @@ footer a:hover {
 }
 
 /* FOOTER */
-
 footer {
   text-align: center;
   font-weight: bold;
@@ -422,7 +421,6 @@ footer {
 }
 
 /* BACK TO TOP */
-
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -444,7 +442,6 @@ footer {
 }
 
 /* MOTION PREFERENCES */
-
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
