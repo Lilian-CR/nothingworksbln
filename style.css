@@ -138,7 +138,7 @@ nav .navbar-nav a:hover,
   .social-icons {
     flex-wrap: nowrap;                /* all in one line */
     justify-content: left;          
-    gap: 4px;                         /* tighter spacing */
+    gap: 3px;                         /* tighter spacing */
     padding: 6px 50px 6px 10px;       /* space for burger */
   }
 
