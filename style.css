@@ -136,16 +136,16 @@ nav .navbar-nav a:hover,
 
 @media (max-width: 480px) {
   .social-icons {
-    flex-wrap: nowrap;       /* stay in one line */
-    justify-content: space-between; /* evenly spaced */
-    gap: 4px;                
-    padding: 6px 12px;       /* balanced padding */
+    flex-wrap: nowrap;                /* all in one line */
+    justify-content: left;          
+    gap: 4px;                         /* tighter spacing */
+    padding: 6px 50px 6px 10px;       /* space for burger */
   }
 
   .social-icons a {
-    width: 30px;             /* smaller icons */
-    height: 30px;
-    font-size: 1rem;
+    width: 36px;                      
+    height: 36px;
+    font-size: 1.2rem;
   }
 }
 
