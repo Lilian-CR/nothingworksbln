@@ -42,7 +42,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 56px; /* reserve space for burger */
+  padding-right: 50px; /* reserve space for burger */
 }
 
 /* SOCIAL ICONS */
@@ -108,7 +108,7 @@ a:focus-visible {
 /* NAVBAR */
 nav {
   position: absolute;
-  top: 56px;
+  top: 50px;
   right: 0;
   left: auto;
   z-index: 1500;
