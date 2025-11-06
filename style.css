@@ -32,7 +32,7 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-/* topbar wraps burger + nav + icons */
+/* ---------- NEW: topbar wraps burger + nav + icons ---------- */
 .topbar {
   position: sticky;
   top: 0;
@@ -40,7 +40,7 @@ a:focus-visible {
   background: var(--yellow);
   display: flex;
   align-items: center;          /* vertical centering for burger & icons */
-  justify-content: center;      
+  justify-content: center;      /* icons centered */
   height: 56px;                 /* consistent line height */
 }
 
