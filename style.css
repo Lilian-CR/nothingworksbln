@@ -32,24 +32,25 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-/* ---------- NEW: topbar wraps burger + nav + icons ---------- */
+/* ---------- TOPBAR ---------- */
 .topbar {
   position: sticky;
   top: 0;
   z-index: 1000;
   background: var(--yellow);
-  display: flex;
-  align-items: center;          /* vertical centering for burger & icons */
-  justify-content: center;      /* icons centered */
-  height: 56px;                 /* consistent line height */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* left | icons | right */
+  align-items: center;
+  height: 56px;
 }
 
-/* NAVBAR (nav used only for the dropdown list) */
+/* NAVBAR */
 nav {
-  background-color: transparent; /* keep bar yellow */
-  padding: 0;                    /* bar height controlled by .topbar */
-  position: relative;            /* anchor for the dropdown */
+  background-color: transparent;
+  padding: 0;
+  position: relative;
   z-index: 1000;
+  height: 56px;
 }
 
 .navbar-nav {
@@ -71,14 +72,15 @@ nav .navbar-nav a:hover,
   text-decoration: underline;
 }
 
-/* Burger Menu — vertically centered via flex (no absolute) */
+/* BURGER MENU */
 .burger {
   display: none;
   font-size: 2rem;
   padding: 10px;
   cursor: pointer;
   line-height: 1;
-  margin-left: auto;            /* push burger to right edge */
+  grid-column: 3;
+  justify-self: end;
 }
 #menu-toggle { display: none; }
 
@@ -91,7 +93,7 @@ nav .navbar-nav a:hover,
     align-items: flex-start;
     background: var(--yellow);
     position: absolute;
-    top: 56px;                  /* sit just below the topbar */
+    top: 100%; /* sits just below topbar */
     right: 0;
     width: 33%;
     min-width: 220px;
@@ -115,12 +117,15 @@ nav .navbar-nav a:hover,
 .social-icons {
   display: flex;
   justify-content: center;
-  align-items: center;          /* same vertical center as burger */
+  align-items: center;
   gap: 8px;
-  margin: 0;                    /* topbar controls the height */
-  padding-right: 40px;
-  flex-wrap: nowrap;            /* no line breaks */
-  scrollbar-width: none;        /* hides scrollbar in Firefox */
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+  grid-column: 2;
+  position: relative;
+  z-index: 1600; /* keep clickable */
 }
 
 .social-icons a {
@@ -142,10 +147,8 @@ nav .navbar-nav a:hover,
 
 @media (max-width: 480px) {
   .social-icons {
-    flex-wrap: nowrap;                /* all in one line */
-    justify-content: left;
-    gap: 3px;                         /* tighter spacing */
-    padding: 0 50px 0 10px;           /* space for burger; vertically centered by .topbar */
+    gap: 3px;
+    padding: 0;
   }
 
   .social-icons a {
