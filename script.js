@@ -22,3 +22,27 @@ prevBtn.addEventListener('click', () => {
 
 window.addEventListener('resize', updateSlider);
 window.addEventListener('load', updateSlider);
+
+/* ---------- Back-to-top behaviour (PATCH) ---------- */
+(function () {
+  const btn = document.querySelector('.back-to-top');
+  if (!btn) return;
+
+  const toggleBtn = () => {
+    if (window.scrollY > 300) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  };
+
+  // initial state + on scroll
+  toggleBtn();
+  window.addEventListener('scroll', toggleBtn, { passive: true });
+
+  // smooth scroll to top
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
