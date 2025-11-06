@@ -40,7 +40,7 @@ a:focus-visible {
   background: var(--yellow);
   display: flex;
   align-items: center;          /* vertical centering for burger & icons */
-  justify-content: right;      
+  justify-content: center;      
   height: 56px;                 /* consistent line height */
 }
 
