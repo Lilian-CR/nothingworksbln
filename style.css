@@ -109,10 +109,12 @@ nav .navbar-nav a:hover,
 .social-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 8px;
   margin: 10px 0;
-  padding-right: 40px; /* Icons don’t overlap burger */
-  flex-wrap: wrap;
+  padding-right: 40px;
+  flex-wrap: nowrap;       /* no line breaks */
+  scrollbar-width: none;   /* hides scrollbar in Firefox */
 }
 
 .social-icons a {
@@ -133,9 +135,16 @@ nav .navbar-nav a:hover,
 }
 
 @media (max-width: 480px) {
+  .social-icons {
+    flex-wrap: nowrap;       /* stay in one line */
+    justify-content: space-between; /* evenly spaced */
+    gap: 4px;                
+    padding: 6px 12px;       /* balanced padding */
+  }
+
   .social-icons a {
-    width: 36px;
-    height: 36px;
+    width: 30px;             /* smaller icons */
+    height: 30px;
     font-size: 1rem;
   }
 }
