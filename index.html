@@ -6,28 +6,19 @@
   <title>Nothing Works</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  <link rel="apple-touch-icon" href="images/fNW.jpg"/>
+  <link rel="icon" type="image/png" href="images/NW.jpg"/>
 </head>
 <body>
 
-<div id="top"></div> <!-- anchor for back-to-top (PATCH) -->
+<div id="top"></div> <!-- anchor for back-to-top -->
 
-<!-- Top bar: icons centred; burger on the right; dropdown anchored below -->
+<!-- Top bar: icons centred; burger on the right -->
 <div class="topbar">
   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" class="burger">&#9776;</label>
 
-  <!-- dropdown panel lives here but is positioned BELOW the bar -->
-  <nav id="nav">
-    <ul class="navbar-nav">
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#bio">BIO</a></li>
-      <li><a href="#music">MUSIC</a></li>
-      <li><a href="#live">LIVE</a></li>
-      <li><a href="#tour">TOUR</a></li>
-    </ul>
-  </nav>
-
-  <!-- centred row of social icons -->
+  <!-- Social icons centered -->
   <div id="home" class="social-icons">
     <a href="https://www.instagram.com/nothingworksbln/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
     <a href="https://www.facebook.com/nothingworksbln" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
@@ -40,6 +31,17 @@
     <a href="mailto:nothingworks030@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
   </div>
 </div>
+
+<!--  NAV for desktop -->
+<nav id="nav">
+  <ul class="navbar-nav">
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#bio">BIO</a></li>
+    <li><a href="#music">MUSIC</a></li>
+    <li><a href="#live">LIVE</a></li>
+    <li><a href="#tour">TOUR</a></li>
+  </ul>
+</nav>
 
 <section id="billboard">
   <div class="hero-content">
@@ -182,11 +184,15 @@
   </div>
 </section>
 
-<a href="#top" class="back-to-top" title="Back to top">&#8679;</a> <!-- PATCH: target #top -->
+<a href="#top" class="back-to-top" title="Back to top">&#8679;</a>
 
 <footer>
-  <p>Nothing Works &copy; 2025</p>
+  <p>Nothing Works &copy; <span id="year"></span></p>
 </footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <script src="script.js"></script>
 </body>
