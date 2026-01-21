@@ -154,7 +154,8 @@ nav .navbar-nav a:hover,
     list-style: none;
   }
 
-  #menu-toggle:checked + .burger + nav .navbar-nav {
+  /* Menu open rule */
+  #menu-toggle:checked + .topbar + nav .navbar-nav {
     display: flex;
   }
 
@@ -164,7 +165,7 @@ nav .navbar-nav a:hover,
   }
 }
 
-/* BILLBOARD / HERO */
+/* HERO */
 #billboard {
   background-color: var(--cream);
   text-align: center;
@@ -418,7 +419,7 @@ footer a:hover {
   width: 100%;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 8px rgba(0,  0, 0, 0.12);
 }
 
 @media (max-width: 768px) {
