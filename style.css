@@ -189,7 +189,7 @@ nav .navbar-nav a:hover,
   margin-bottom: 20px;
 }
 .section p {
-  max-width: 700px;
+  max-width: 975px;
   margin: 0 auto 30px;
   text-align: justify;
 }
@@ -234,7 +234,7 @@ footer a:hover {
 .live-section h2 {
   font-size: 2rem;
   text-align: left;
-  max-width: 950px;
+  max-width: 975px;
   margin: 0 auto 20px;
   padding: 0 20px;
 }
@@ -244,7 +244,7 @@ footer a:hover {
   flex-wrap: wrap;
   gap: 30px;
 
-  max-width: 950px;
+  max-width: 975px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -293,7 +293,7 @@ footer a:hover {
   position: relative;
   overflow: hidden;
 
-  max-width: 950px;
+  max-width: 975px;
   margin: 40px auto;
   padding: 0 20px;
 
@@ -388,7 +388,7 @@ footer a:hover {
 
 /* BANDSINTOWN / Tour Dates */
 .bandsintown-wrapper {
-  max-width: 600px;
+  max-width: 975px;
   margin: 40px auto;
   text-align: center;
 }
@@ -402,7 +402,7 @@ footer a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  max-width: 1100px;
+  max-width: 975px;
   margin: 60px auto;
   padding: 0 20px;
   align-items: flex-start;
