@@ -228,12 +228,6 @@ nav .navbar-nav a:hover,
   border: 0;
 }
 
-/* Follow button */
-.follow-embed {
-  display: flex;
-  justify-content: center;
-}
-
 /* Links inside MUSIC */
 #music a {
   color: var(--yellow);
