@@ -225,6 +225,32 @@ footer a:hover {
   background-color: var(--cream);
 }
 
+/* ---------- MUSIC EMBED (PATCH) ---------- */
+.music-embed {
+  max-width: 975px;
+  margin: 0 auto;
+}
+
+.bandcamp-player {
+  position: relative;
+  width: 100%;
+  height: 241px;
+}
+
+.bandcamp-player iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ---------- EP SECTION BG (PATCH) ---------- */
+/* EP should also be beige/cream */
+.ep-release {
+  background-color: var(--cream);
+}
+
 /* LIVE SECTION */
 .live-section {
   background-color: var(--yellow);
@@ -432,6 +458,17 @@ footer a:hover {
   height: auto;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,  0, 0, 0.12);
+}
+
+/* ---------- EP COVER TOP (PATCH) ---------- */
+.ep-cover-top {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px auto 30px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 768px) {
