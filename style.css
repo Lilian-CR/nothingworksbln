@@ -218,6 +218,9 @@ footer a:hover {
 #music {
   background-color: var(--cream);
 }
+#ep {
+  background-color: var(--cream);
+}
 #live {
   background-color: var(--yellow);
 }
@@ -229,6 +232,7 @@ footer a:hover {
 .music-embed {
   max-width: 975px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .bandcamp-player {
@@ -243,12 +247,6 @@ footer a:hover {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-/* ---------- EP SECTION BG (PATCH) ---------- */
-/* EP should also be beige/cream */
-.ep-release {
-  background-color: var(--cream);
 }
 
 /* LIVE SECTION */
@@ -425,42 +423,18 @@ footer a:hover {
 
 /* EP RELEASE */
 .ep-release {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
   max-width: 975px;
-  margin: 60px auto;
+  margin: 0 auto;
   padding: 0 20px;
-  align-items: flex-start;
-}
-.ep-text {
-  flex: 1 1 60%;
-  max-width: 650px;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--text);
-}
-.ep-text h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-.ep-text p {
-  margin-bottom: 20px;
-}
-.ep-cover {
-  flex: 1 1 35%;
-  max-width: 400px;
-  text-align: center;
-}
-.ep-cover img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0,  0, 0, 0.12);
 }
 
-/* ---------- EP COVER TOP (PATCH) ---------- */
+.ep-meta {
+  max-width: 975px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+/* EP cover sits under title, above text */
 .ep-cover-top {
   display: block;
   width: 100%;
@@ -469,20 +443,6 @@ footer a:hover {
   margin: 20px auto 30px;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-}
-
-@media (max-width: 768px) {
-  .ep-release {
-    flex-direction: column;
-    text-align: left;
-  }
-  .ep-text,
-  .ep-cover {
-    max-width: 100%;
-  }
-  .ep-text h3 {
-    font-size: 1.3rem;
-  }
 }
 
 /* FOOTER */
