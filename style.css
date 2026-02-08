@@ -229,24 +229,28 @@ footer a:hover {
 }
 
 /* ---------- MUSIC EMBED (PATCH) ---------- */
-.music-embed {
-  max-width: 975px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.bandcamp-player {
-  position: relative;
+.music-embed{
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 241px;
 }
 
-.bandcamp-player iframe {
+.bandcamp-player{
+  width: min(975px, 100%);
+  height: 300px;
+  position: relative;
+}
+
+.bandcamp-player iframe{
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+#music{
+  text-align: center; /* optional, helps the follow button too */
 }
 
 /* LIVE SECTION */
@@ -429,9 +433,18 @@ footer a:hover {
 }
 
 .ep-meta {
-  max-width: 975px;
-  margin: 0 auto 20px;
+  margin: 0 0 20px;
   text-align: left;
+}
+
+/* EP links */
+#ep a {
+  color: var(--yellow); 
+}
+
+#ep a:hover {
+  color: var(--muted);
+  text-decoration: underline;
 }
 
 /* EP cover sits under title, above text */
@@ -444,6 +457,7 @@ footer a:hover {
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }
+
 
 /* FOOTER */
 footer {
