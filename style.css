@@ -228,6 +228,25 @@ nav .navbar-nav a:hover,
   border: 0;
 }
 
+.bc-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bc-frame {
+  position: relative;
+  width: 100%;
+  height: 241px; /* like your example */
+}
+
+.bc-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Links inside MUSIC */
 #music a {
   color: var(--yellow);
