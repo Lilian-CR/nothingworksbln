@@ -214,33 +214,27 @@ nav .navbar-nav a:hover,
   background-color: var(--cream);
 }
 
-/* ---------- MUSIC EMBED (FIXED CENTRE) ---------- */
-/* This centres the whole block, and the iframe fills it */
+/* ---------- MUSIC EMBED ---------- */
 .music-embed {
   max-width: 975px;
   margin: 0 auto;
 }
 
 .bandcamp-player {
-  position: relative;
-  width: 100%;
-  height: 300px;
+  max-width: 975px;
+  margin: 0 auto;
 }
 
 .bandcamp-player iframe {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
+  max-width: 975px;
+  height: 300px;
   border: 0;
+  margin: 0 auto;
 }
 
-/* Follow button centred */
-.follow-embed {
-  text-align: center;
-}
-
-/* Links inside MUSIC (if you ever add links there) */
+/* Links inside MUSIC */
 #music a {
   color: var(--yellow);
 }
@@ -420,7 +414,7 @@ footer a:hover {
   }
 }
 
-/* BANDSINTOWN / Tour Dates */
+/* BANDSINTOWN */
 .bandsintown-wrapper {
   max-width: 975px;
   margin: 40px auto;
@@ -443,7 +437,7 @@ footer a:hover {
   text-align: left;
 }
 
-/* EP links (change this colour here) */
+/* EP links */
 #ep a {
   color: var(--yellow);
 }
@@ -452,7 +446,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* EP cover sits under title, above text */
+/* EP cover */
 .ep-cover-top {
   display: block;
   width: 100%;
