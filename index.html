@@ -76,14 +76,16 @@
 
 <section id="music" class="section">
   <h2>MUSIC</h2>
-<div style="max-width: 975px; margin: 0 auto;">
-  <div style="position: relative; width: 100%; height: 241px;">
-    <iframe
-      src="https://bandcamp.com/EmbeddedPlayer/album=121439056/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/"
-      style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;">
-    </iframe>
+
+  <!-- Bandcamp embed (centred) -->
+  <div class="music-embed">
+    <div class="bandcamp-player">
+      <iframe
+        src="https://bandcamp.com/EmbeddedPlayer/album=121439056/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
-</div>
 
   <br>
 
@@ -97,38 +99,47 @@
   </div>
 </section>
 
-  <!-- EP Section -->
+<!-- EP Section (FULL beige like MUSIC) -->
+<section id="ep" class="section">
   <div class="ep-release">
     <div class="ep-text">
       <h2>BOLD TALK FOR A BURNER ACCOUNT</h2>
-        </h3>(EXR 041, MPR 007, RR 220)</h3>
-      <p><strong>OUT NOW — 7” vinyl via Emancypunx Records + Refuse Records, cassette via My People Records</strong></p>
-      <p>Nothing Works’ debut EP delivers four songs of urgency, honesty, and confrontation, raw emotion with sharp critique. “Bold Talk for a Burner Account” pulls straight from lived experience: racism in punk spaces, fatphobic trolling, gender erasure, and the burnout of carrying other people’s weight in DIY scenes. It’s personal and political, calling out exclusion while reclaiming space.</strong><br>
-      <p>Blending ’90s indie/alternative with modern melodic and post-hardcore, their sound matches the anger and emotion in the lyrics, shifting between sarcasm and outright rage.</p>
-        
-        <p><strong>Vinyl pressing info:</strong><br>
-• 100 solid red vinyl <br>
-• 200 black vinyl <br>
-• 15 test press / SOLD OUT <br>
-Orders via <a href="https://refusemusic.net/?post_type=product&s=nothing+works" target="_blank">Refuse Records</a></p>
+      <p class="ep-meta">(EXR 041, MPR 007, RR 220)</p>
 
-          <p><strong>Cassette info:</strong><br>
-• 50 white welded <br>
-• 50 solid red welded <br>
-(Note: the cassettes will be managed by the band when touring resumes and are not available online. MPR supports only with promotion.)</p>
-          
+      <img class="ep-cover-top" src="images/NW.jpg" alt="EP cover of Nothing Works – Bold Talk for a Burner Account" />
+
+      <p><strong>OUT NOW — 7” vinyl via Emancypunx Records + Refuse Records, cassette via My People Records</strong></p>
+
+      <p>Nothing Works’ debut EP delivers four songs of urgency, honesty, and confrontation, raw emotion with sharp critique. “Bold Talk for a Burner Account” pulls straight from lived experience: racism in punk spaces, fatphobic trolling, gender erasure, and the burnout of carrying other people’s weight in DIY scenes. It’s personal and political, calling out exclusion while reclaiming space.</p>
+
+      <p>Blending ’90s indie/alternative with modern melodic and post-hardcore, their sound matches the anger and emotion in the lyrics, shifting between sarcasm and outright rage.</p>
+
+      <p><strong>Vinyl pressing info:</strong><br>
+        • 100 solid red vinyl <br>
+        • 200 black vinyl <br>
+        • 15 test press / SOLD OUT <br>
+        Orders via <a href="https://refusemusic.net/?post_type=product&s=nothing+works" target="_blank">Refuse Records</a>
+      </p>
+
+      <p><strong>Cassette info:</strong><br>
+        • 50 white welded <br>
+        • 50 solid red welded <br>
+        (Note: the cassettes will be managed by the band when touring resumes and are not available online. MPR supports only with promotion.)
+      </p>
+
       <p>Design work + Ilustration by the amazing <a href="https://www.instagram.com/camilaxleao" target="_blank"><strong>Camila Leão</strong></a>.</p>
+
       <p><strong>Tracklist:</strong><br>
         1. Look at the Shit You Just Spew<br>
         2. Take My Body Out of Your Mouth<br>
         3. I Am Not Your Bro<br>
-        4. Matcha Latte</p>
+        4. Matcha Latte
+      </p>
+
       <p><strong>Recorded & Mixed</strong> by Imran Siddiqi at Studio Six (Brussels)<br>
-      <strong>Mastered for Vinyl Press</strong> by Mariusz Dziurawiec (Warsaw)<br>
-      <strong>Mastered for Streaming</strong> by Pete Grossmann at Bricktop Recording (Chicago)</p>
-    </div>
-    <div class="ep-cover">
-      <img src="images/NW.jpg" alt="EP cover of Nothing Works – Bold Talk for a Burner Account" />
+        <strong>Mastered for Vinyl Press</strong> by Mariusz Dziurawiec (Warsaw)<br>
+        <strong>Mastered for Streaming</strong> by Pete Grossmann at Bricktop Recording (Chicago)
+      </p>
     </div>
   </div>
 </section>
@@ -163,8 +174,8 @@ Orders via <a href="https://refusemusic.net/?post_type=product&s=nothing+works" 
         </p>
       </div>
       <div class="video-container">
-  <iframe src="https://www.youtube.com/embed/SL1Qd1AI5eE?si=vcdfDTyjSJ0R3q80" title="Nothing Works Live" frameborder="0" allowfullscreen></iframe>
-</div>
+        <iframe src="https://www.youtube.com/embed/SL1Qd1AI5eE?si=vcdfDTyjSJ0R3q80" title="Nothing Works Live" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 
@@ -215,10 +226,6 @@ Orders via <a href="https://refusemusic.net/?post_type=product&s=nothing+works" 
 <footer>
   <p>Nothing Works &copy; <span id="year"></span></p>
 </footer>
-
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 <script src="script.js"></script>
 </body>
