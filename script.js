@@ -6,41 +6,47 @@ const nextBtn = document.querySelector('.slider-btn.next');
 let currentIndex = 0;
 
 function updateSlider() {
+  if (!track || !slides.length) return;
   const slideWidth = slides[0].offsetWidth;
   track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateSlider();
-});
+if (nextBtn) {
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+  });
+}
 
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateSlider();
-});
+if (prevBtn) {
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlider();
+  });
+}
 
 window.addEventListener('resize', updateSlider);
 window.addEventListener('load', updateSlider);
 
-/* ---------- Back-to-top behaviour (PATCH) ---------- */
+/* Year in footer */
+(function () {
+  const yearEl = document.getElementById('year');
+  if (!yearEl) return;
+  yearEl.textContent = new Date().getFullYear();
+})();
+
+/* Back-to-top behaviour */
 (function () {
   const btn = document.querySelector('.back-to-top');
   if (!btn) return;
 
   const toggleBtn = () => {
-    if (window.scrollY > 300) {
-      btn.style.display = 'block';
-    } else {
-      btn.style.display = 'none';
-    }
+    btn.style.display = window.scrollY > 300 ? 'block' : 'none';
   };
 
-  // initial state + on scroll
   toggleBtn();
   window.addEventListener('scroll', toggleBtn, { passive: true });
 
-  // smooth scroll to top
   btn.addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
