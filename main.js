@@ -31,137 +31,190 @@ const schedule = [
     desc: 'Show Day'
   },
   {
-    id: 'arrival',
+    id: 'departure',
     start: `2026-04-30T09:00:00${Z}`,
     end: `2026-04-30T09:30:00${Z}`,
     title: 'Van Pick-up',
     desc: 'Van pick-up at Tour Alarm.'
   },
   {
-    id: 'fireside',
+    id: 'next_day1',
     start: `2026-04-30T09:45:00${Z}`,
     end: `2026-04-30T10:00:00${Z}`,
     title: 'Pick-up Mela',
     desc: 'Mela address.'
   },
   {
-    id: 'wealth',
+    id: 'next-2_day1',
     start: `2026-04-30T10:15:00${Z}`,
     end: `2026-04-30T10:30:00${Z}`,
     title: 'Pick-up Lilian, Merch and Guitar Cab',
   },
   {
-    id: 'break1',
+    id: 'next-3_day1',
     start: `2026-04-30T10:30:00${Z}`,
     end: `2026-04-30T13:30:00${Z}`,
     title: 'Travel - first half.',
   },
   {
-    id: 'founders',
+    id: 'next-4_day1',
     start: `2026-04-30T13:30:00${Z}`,
     end: `2026-04-30T14:00:00${Z}`,
     title: 'Lunch Break',
     desc: 'Stop on the road on a place with oudoor seating area.'
   },
   {
-    id: 'circle',
+    id: 'next-5_day1',
     start: `2026-04-30T14:00:00${Z}`,
     end: `2026-04-30T18:00:00${Z}`,
     title: 'Second half of the driving',
   },
   {
-    id: 'lunch',
+    id: 'next-6_day1',
     start: `2026-04-30T18:00:00${Z}`,
     end: `2026-04-30T18:10:00${Z}`,
     title: 'Get-in / Doors',
   },
   {
-    id: 'ai',
+    id: 'next-7_day1',
     start: `2026-04-30T20:30:00${Z}`,
     end: `2026-04-30T22:30:00${Z}`,
     title: 'Pick-up Eunice at the Airport',
   },
   {
-    id: 'mental',
+    id: 'next-8_day1',
     start: `2026-04-30T22:30:00${Z}`,
     end: `2026-04-30T23:30:00${Z}`,
     title: 'Drive Eunice to the gig',
    },
   {
-    id: 'content',
+    id: 'next-9_day1',
     start: `2026-04-30T23:30:00${Z}`,
     end: `2026-04-30T23:40:00${Z}`,
     title: 'Setting stage',
     },
   {
-    id: 'executive',
+    id: 'next-10_day1',
     start: `2026-04-30T23:40:00${Z}`,
     end: `2026-04-30T23:59:00${Z}`,
     title: 'STAGE-TIME',
    },
   {
-    id: 'skills',
+    id: 'next-1_day1',
     start: `2026-04-30T23:59:00${Z}`,
     end: `2026-04-30T23:59:00${Z}`,
     title: 'VAN CALL - Drive to the Hostel',
   },
 
   {
-    id: 'day-berlin',
+    id: 'day-Szczecin',
     type: 'day-banner',
     start: `2026-05-01T00:00:00${Z}`,
     end: `2026-05-01T00:01:00${Z}`,
-    title: 'Berlin, Germany – Cassiopeia Club',
+    title: 'Szczecin, Poland – Piwnica Kany',
     desc: 'Show Day'
   },
   {
-    id: 'arrival-may1',
-    start: `2026-05-01T09:00:00${Z}`,
-    end: `2026-05-01T09:30:00${Z}`,
-    title: 'Van Pick-up',
-    desc: 'Van pick-up at Tour Alarm.'
+    id: 'break-fast',
+    start: `2026-05-01T09:30:00${Z}`,
+    end: `2026-05-01T09:55:00${Z}`,
+    title: 'Breakfast',
+    desc: 'Hostel Kitchen.'
   },
   {
-    id: 'fireside-may1',
-    start: `2026-05-01T09:45:00${Z}`,
-    end: `2026-05-01T10:00:00${Z}`,
-    title: 'Pick-up Mela',
-    desc: 'Mela address.'
+    id: 'departure-2',
+    start: `2026-05-01T10:00:00${Z}`,
+    end: `2026-05-01T10:05:00${Z}`,
+    title: 'VAN-CALL',
+    desc: 'Check-out and van lugagge loading.'
   },
   {
-    id: 'wealth-may1',
-    start: `2026-05-01T10:15:00${Z}`,
-    end: `2026-05-01T10:30:00${Z}`,
-    title: 'Pick-up Lilian, Merch and Guitar Cab',
+    id: 'next_day2',
+    start: `2026-05-01T10:10:00${Z}`,
+    end: `2026-05-01T13:30:00${Z}`,
+    title: 'First half of the driving',
   },
-
+{
+    id: 'next-1_day2',
+    start: `2026-05-01T13:30:00${Z}`,
+    end: `2026-05-01T14:00:00${Z}`,
+    title: 'Lunch Break',
+  },
   {
-    id: 'day-dresden',
+    id: 'next-2_day2',
+    start: `2026-05-01T14:00:00${Z}`,
+    end: `2026-05-01T17:00:00${Z}`,
+    title: 'Drive to Szczecin',
+  },
+  { 
+  id: 'next-3_day2',
+    start: `2026-05-01T17:00:00${Z}`,
+    end: `2026-05-01T17:00:00${Z}`,
+    title: 'GET - IN',
+  },
+    },
+  {
+    id: 'next-4_day2',
+    start: `2026-05-01T17:00:00${Z}`,
+    end: `2026-05-01T17:00:00${Z}`,
+    title: 'Sound-check?',
+  },
+    {
+    id: 'next-5_day2',
+    start: `2026-05-01T17:00:00${Z}`,
+    end: `2026-05-01T17:00:00${Z}`,
+    title: 'STAGE TIME?',
+  },
+{
+    id: 'next-5_day2',
+    start: `2026-05-01T21:30:00${Z}`,
+    end: `2026-05-01T23:30:00${Z}`,
+    title: 'Drive to Berlin',
+  },
+  {
+    id: 'day-Zwickau',
     type: 'day-banner',
     start: `2026-05-02T00:00:00${Z}`,
     end: `2026-05-02T00:01:00${Z}`,
-    title: 'Dresden, Germany – Chemiefabrik Club',
+    title: 'Zwickau, Germany – Schumannplatz',
     desc: 'Show Day'
   },
   {
-    id: 'arrival-may2',
-    start: `2026-05-02T09:00:00${Z}`,
-    end: `2026-05-02T09:30:00${Z}`,
-    title: 'Van Pick-up',
-    desc: 'Van pick-up at Tour Alarm.'
+    id: 'departure-3',
+    start: `2026-05-01T09:00:00${Z}`,
+    end: `2026-05-01T09:10:00${Z}`,
+    title: 'VAN-CALL',
+    desc: 'Go to the van.'
+  },
+   {
+    id: 'next_day3',
+    start: `2026-05-01T19:10:00${Z}`,
+    end: `2026-05-01T13:30:00${Z}`,
+    title: 'Drive to Zwickau',
+  },
+{
+    id: 'next-1_day3',
+    start: `2026-05-01T13:30:00${Z}`,
+    end: `2026-05-01T13:30:00${Z}`,
+    title: 'GET-IN / Venue Lunch-Snacks',
   },
   {
-    id: 'fireside-may2',
-    start: `2026-05-02T09:45:00${Z}`,
-    end: `2026-05-02T10:00:00${Z}`,
-    title: 'Pick-up Mela',
-    desc: 'Mela address.'
+    id: 'next-2_day3',
+    start: `2026-05-01T13:30:00${Z}`,
+    end: `2026-05-01T13:30:00${Z}`,
+    title: 'SOUND-CHECK?',
+  },
+    {
+    id: 'next-3_day3',
+    start: `2026-05-01T13:30:00${Z}`,
+    end: `2026-05-01T13:30:00${Z}`,
+    title: 'STAGE-TIME',
   },
   {
-    id: 'wealth-may2',
-    start: `2026-05-02T10:15:00${Z}`,
-    end: `2026-05-02T10:30:00${Z}`,
-    title: 'Pick-up Lilian, Merch and Guitar Cab',
+    id: 'next-4_day3',
+    start: `2026-05-01T18:30:00${Z}`,
+    end: `2026-05-01T22:30:00${Z}`,
+    title: 'Drive to Berlin and probably train/Bus to Vienna',
   },
 ];
 
