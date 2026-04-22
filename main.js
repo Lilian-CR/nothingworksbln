@@ -180,8 +180,8 @@ const schedule = [
   },
   {
     id: 'departure-3',
-    start: `2026-05-02T09:00:00${Z}`,
-    end: `2026-05-02T09:10:00${Z}`,
+    start: `2026-05-02T10:00:00${Z}`,
+    end: `2026-05-02T10:10:00${Z}`,
     title: 'VAN-CALL',
     desc: 'Go to the van.'
   },
