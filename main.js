@@ -207,7 +207,7 @@ const schedule = [
     id: 'next-3_day3',
     start: `2026-05-02T13:30:00${Z}`,
     end: `2026-05-02T13:30:00${Z}`,
-    title: 'STAGE-TIME',
+    title: 'STAGE-TIME?',
   },
   {
     id: 'next-4_day3',
