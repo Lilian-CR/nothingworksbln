@@ -1,7 +1,7 @@
 // Helpers
 const $ = sel => document.querySelector(sel);
 const $$ = sel => Array.from(document.querySelectorAll(sel));
-const DAY = '2025-11-13', Z = '+01:00';
+const DAY = '2026-04-30', Z = '+01:00';
 
 // Testing
 function getNowMs() {
@@ -26,14 +26,13 @@ const schedule = [
     id: 'arrival',
     start: `${DAY}T09:00:00${Z}`,
     end: `${DAY}T09:30:00${Z}`,
-    title: 'Arrival & Networking',
-    img: 'https://codingblackfemales.com/img/black-woman-phone.jpg',
-    desc: 'Start your day connecting with fellow attendees over coffee. Collect your badge, meet new peers, and soak in the energy before the first talks begin. A relaxed space to make introductions and get ready for an inspiring summit ahead.'
+    title: 'Van Pick-up',
+    desc: 'Van pick-up at Tour Alarm.'
   },
   {
     id: 'opening',
-    start: `${DAY}T09:30:00${Z}`,
-    end: `${DAY}T09:45:00${Z}`,
+    start: `${DAY}T09:00:00${Z}`,
+    end: `${DAY}T09:30:00${Z}`,
     title: 'Opening Remarks & Welcome',
     speaker: 'Chiedza Muguti — Product Leader & Coach',
     img: 'https://cdn.prod.website-files.com/68406261f85bbcb0476c7540/685bb8865a3af01f3afa1aa1_Chiedza%20Muguti.jpeg',
@@ -42,33 +41,27 @@ const schedule = [
   {
     id: 'fireside',
     start: `${DAY}T09:45:00${Z}`,
-    end: `${DAY}T10:30:00${Z}`,
-    title: 'Fireside Chat — Power in Action: Leading the Change and Shaping the Future for Black Women',
-    speaker: 'Olamide Olowe — Founder & CEO of Topicals',
-    img: 'https://cdn.prod.website-files.com/68406261f85bbcb0476c7540/68e3cd4f71d2601a907dfd9e_image_50405121%20(2).JPG',
-    desc: 'Join Olamide Olowe, Forbes 30 Under 30 founder of Topicals, for a candid conversation on leadership, resilience, and creating impact. Hear how she built one of Sephora’s fastest-growing brands and continues redefining beauty, representation, and success on her own terms.'
+    end: `${DAY}T10:00:00${Z}`,
+    title: 'Pick-up Mela',
+    desc: 'Mela address.'
   },
   {
     id: 'wealth',
-    start: `${DAY}T10:30:00${Z}`,
-    end: `${DAY}T11:15:00${Z}`,
-    title: 'Level Up Your Wealth: Black Women´s Strategy for Financial Growth and Wealth Generation',
+    start: `${DAY}T10:15:00${Z}`,
+    end: `${DAY}T10:30:00${Z}`,
+    title: 'Pick-up Lilian, Merch and Guitar Cab',
     speaker: 'Dineo Ledwaba-Chapman — Financial Adviser at Belvedere Wealth Management',
-    img: 'https://cdn.prod.website-files.com/68406261f85bbcb0476c7540/68b0c3931b97d76faef7ede6_Dineo%20-%20Photo.jpg',
-    desc: 'Led by Dineo Ledwaba-Chapman of Belvedere Wealth Management, this workshop empowers Black women to take control of their financial futures. Discover strategies for income growth, smart investing, and long-term wealth building through practical, life-centred financial planning.'
   },
   {
     id: 'break1',
-    start: `${DAY}T11:20:00${Z}`,
-    end: `${DAY}T11:30:00${Z}`,
-    title: 'Morning Break & Networking',
-    img: 'https://media.gettyimages.com/id/1442269395/photo/two-businesswomen-walking-down-the-coworking-stairs.jpg?s=612x612&w=0&k=20&c=uTw48PtN1OcWEz1D_-jgFLzVuqJVSuFOR1O2Q7ptZYo=',
-    desc: 'Take a short pause to recharge, connect with peers, and reflect on the morning’s insights. Enjoy refreshments and conversations before the next inspiring panel begins.'
+    start: `${DAY}T10:30:00${Z}`,
+    end: `${DAY}T13:30:00${Z}`,
+    title: 'Travel - first half.',
   },
   {
     id: 'founders',
-    start: `${DAY}T11:30:00${Z}`,
-    end: `${DAY}T12:15:00${Z}`,
+    start: `${DAY}T13:30:00${Z}`,
+    end: `${DAY}T12:00:00${Z}`,
     title: 'Panel Discussion – Fueling Progress for Black Female Founders',
     speaker: 'Aneri Pradhan — Founding Partner, Klimatic Ventures, Cosima Richardson — Founder & CEO, Kynd Hair, Leyla F. Karaha — Founder,  YourY Network & Catalyst Noir & Gloria Niiquaye — CEO & Co-Founder, COMESO',
     img: 'images/Aneri_Pradhan-Cosima_Richardson-Leyla_F_Karaha-Gloria_Niiquaye.jpg',
