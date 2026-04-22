@@ -185,11 +185,11 @@ function renderList(mode = 'all') {
 
     if (s.type === 'day-banner') {
       return `
-        <article id="${s.id}" class="day-banner">
+        <div id="${s.id}" class="day-banner">
           <div class="day-banner-inner">
             <h2>${s.title}</h2>
           </div>
-        </article>`;
+        </div>`;
     }
 
     const cls = isCurrent ? 'session current' : isPast ? 'session past' : 'session';
@@ -215,7 +215,7 @@ function renderList(mode = 'all') {
       </article>`;
   }).join('');
 
-  $('#schedule').innerHTML = html;
+  $('#schedule').innerHTML = html.trim();
 
   // Accordion logic — only one expanded
   $$('#schedule article.session').forEach(el => {
