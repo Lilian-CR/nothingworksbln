@@ -12,7 +12,7 @@
 
 /* Base */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { font-family: Arial, sans-serif; background: #f4f4ec; color: #111; }
+html, body { font-family: Arial, sans-serif; background: #FFBD47; color: #7CA0DE; }
 img { max-width: 100%; display: block; border-radius: 0.75rem; }
 body { padding-bottom: 88px; }
 
@@ -41,8 +41,8 @@ body { padding-bottom: 88px; }
 
 .hero-block {
   position: relative;
-  background: #000;
-  color: #fff;
+  background: #7CA0DE;
+  color: #FFBD47;
   font-family: 'HomeVideo', Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ body { padding-bottom: 88px; }
   content: "";
   position: absolute;
   inset: 0;
-  background: #000;
+  background: #7CA0DE;
   z-index: -1 !important; 
 }
 
@@ -122,7 +122,7 @@ body { padding-bottom: 88px; }
 .live-banner { max-width: 650px; margin: 0.5rem auto 0; padding: 0 1rem; }
 .live-banner .box {
   font-family: 'HomeVideo', Arial, sans-serif;
-  background: #000;
+  background: #7CA0DE;
   color: #fff;
   text-align: left;
   padding: 1rem;
@@ -133,7 +133,7 @@ body { padding-bottom: 88px; }
 .live-banner .box span.upnext { color: #fff !important; }
 
 .day-banner {
-  background: #000;
+  background: #7CA0DE;
   color: #fff;
   border-radius: 12px;
   padding: 1.25rem 1rem;
@@ -172,7 +172,7 @@ body { padding-bottom: 88px; }
 
 /* LIVE tag */
 .live-tag {
-  background: #000;
+  background: #7CA0DE;
   color: #fff;
   font-size: 0.65rem;
   padding: 0.15rem 0.35rem;
@@ -241,28 +241,6 @@ body { padding-bottom: 88px; }
 .session.past.expanded .desc { display: block; color: #555; }
 .session.past.expanded .speaker-pic { display: block; filter: grayscale(100%) brightness(0.9); opacity: 0.85; }
 
-/* Speaker Image */
-.speaker-pic {
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 0.75rem;
-  margin: 0.75rem auto;
-  display: block;
-  border: 1px solid #ccc;
-}
-#arrival .speaker-pic,
-#lunch .speaker-pic,
-#break1 .speaker-pic,
-#break2 .speaker-pic,
-#afterparty .speaker-pic {
-  aspect-ratio: 16 / 9;
-  width: 90%;
-  max-width: none;
-  margin: 0.75rem auto;
-  border-radius: 0.75rem;
-}
 @media (max-width: 480px) {
   #lunch .speaker-pic,
   #break1 .speaker-pic,
@@ -288,7 +266,7 @@ body { padding-bottom: 88px; }
   font-size: 0.9rem;
   cursor: pointer;
 }
-.btn-main { background: #000; color: #fff; border: none; }
+.btn-main { background: #7CA0DE; color: #fff; border: none; }
 .btn-alt { border: 1px solid #ccc; background: #fff; color: #000; }
 
 /* Responsive */
