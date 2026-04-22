@@ -187,33 +187,39 @@ const schedule = [
   },
    {
     id: 'next_day3',
-    start: `2026-05-02T09:10:00${Z}`,
-    end: `2026-05-02T13:30:00${Z}`,
+    start: `2026-05-02T10:10:00${Z}`,
+    end: `2026-05-02T14:30:00${Z}`,
     title: 'Drive to Zwickau',
   },
 {
     id: 'next-1_day3',
-    start: `2026-05-02T13:30:00${Z}`,
-    end: `2026-05-02T13:30:00${Z}`,
+    start: `2026-05-02T14:30:00${Z}`,
+    end: `2026-05-02T14:30:00${Z}`,
     title: 'GET-IN / Venue Lunch-Snacks',
   },
   {
     id: 'next-2_day3',
-    start: `2026-05-02T13:30:00${Z}`,
-    end: `2026-05-02T13:30:00${Z}`,
+    start: `2026-05-02T14:30:00${Z}`,
+    end: `2026-05-02T14:30:00${Z}`,
     title: 'SOUND-CHECK?',
   },
-    {
+  {
     id: 'next-3_day3',
-    start: `2026-05-02T13:30:00${Z}`,
-    end: `2026-05-02T13:30:00${Z}`,
+    start: `2026-05-02T16:00:00${Z}`,
+    end: `2026-05-02T16:00:00${Z}`,
+    title: 'DOORS - OPENING',
+  },
+    {
+    id: 'next-4_day3',
+    start: `2026-05-02T16:30:00${Z}`,
+    end: `2026-05-02T16:30:00${Z}`,
     title: 'STAGE-TIME?',
   },
   {
-    id: 'next-4_day3',
+    id: 'next-5_day3',
     start: `2026-05-02T18:30:00${Z}`,
     end: `2026-05-02T22:30:00${Z}`,
-    title: 'Drive to Berlin and probably train/Bus to Vienna',
+    title: 'Drive to Berlin and probably train/Bus to Vienna?',
   },
 ];
 
