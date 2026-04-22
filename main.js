@@ -30,15 +30,6 @@ const schedule = [
     desc: 'Van pick-up at Tour Alarm.'
   },
   {
-    id: 'opening',
-    start: `${DAY}T09:00:00${Z}`,
-    end: `${DAY}T09:30:00${Z}`,
-    title: 'Opening Remarks & Welcome',
-    speaker: 'Chiedza Muguti — Product Leader & Coach',
-    img: 'https://cdn.prod.website-files.com/68406261f85bbcb0476c7540/685bb8865a3af01f3afa1aa1_Chiedza%20Muguti.jpeg',
-    desc: 'Host Chiedza Muguti opens the summit with warmth and purpose. A seasoned product leader and coach, she’ll set the tone for the day—highlighting community, growth, and the power of Black women driving progress through technology and collaboration.'
-  },
-  {
     id: 'fireside',
     start: `${DAY}T09:45:00${Z}`,
     end: `${DAY}T10:00:00${Z}`,
@@ -50,7 +41,6 @@ const schedule = [
     start: `${DAY}T10:15:00${Z}`,
     end: `${DAY}T10:30:00${Z}`,
     title: 'Pick-up Lilian, Merch and Guitar Cab',
-    speaker: 'Dineo Ledwaba-Chapman — Financial Adviser at Belvedere Wealth Management',
   },
   {
     id: 'break1',
@@ -61,120 +51,52 @@ const schedule = [
   {
     id: 'founders',
     start: `${DAY}T13:30:00${Z}`,
-    end: `${DAY}T12:00:00${Z}`,
-    title: 'Panel Discussion – Fueling Progress for Black Female Founders',
-    speaker: 'Aneri Pradhan — Founding Partner, Klimatic Ventures, Cosima Richardson — Founder & CEO, Kynd Hair, Leyla F. Karaha — Founder,  YourY Network & Catalyst Noir & Gloria Niiquaye — CEO & Co-Founder, COMESO',
-    img: 'images/Aneri_Pradhan-Cosima_Richardson-Leyla_F_Karaha-Gloria_Niiquaye.jpg',
-    desc: 'A dynamic panel exploring how Black women founders are scaling impact-driven startups through innovation, partnerships, and resilience. Featuring Aneri Pradhan, Cosima Richardson, Leyla F. Karaha, and Gloria Niiquaye—leaders turning ideas into thriving global ventures.'
+    end: `${DAY}T14:00:00${Z}`,
+    title: 'Lunch Break',
+    desc: 'Stop on the road on a place with oudoor seating area.'
   },
   {
     id: 'circle',
-    start: `${DAY}T12:15:00${Z}`,
-    end: `${DAY}T13:00:00${Z}`,
-    title: 'Panel Discussion – Can We Talk for Real? A Sister Circle on Culture, Sector Challenges, and Society',
-    speaker: 'Liz Osumba — Product Designer, Zalando, Renee Kapuku — Co-Founder, To My Sisters & Author,  Idowu Adesina — Snr Product Designer, Zalando & Madame Joyce — Presenter, Podcast Host & Producer',
-    img: 'https://raw.githubusercontent.com/Lilian-CR/bgts-schedule/refs/heads/main/images/Liz_Osumba-Renee_Kapuku-Idowu_Adesina-Madame_Joyce.jpg',
-    desc: 'Four influential women—Liz Osumba, Renee Kapuku, Idowu Adesina, and Madame Joyce—discuss culture, identity, and leadership in this honest, talk-show-style conversation about what it means to thrive as Black women in Europe’s creative and tech industries.'
+    start: `${DAY}T14:00:00${Z}`,
+    end: `${DAY}T18:00:00${Z}`,
+    title: 'Second half of the driving',
   },
   {
     id: 'lunch',
-    start: `${DAY}T13:00:00${Z}`,
-    end: `${DAY}T14:00:00${Z}`,
-    title: 'Lunch Break',
-    img: 'https://ucddc7c5996d5f2ab4a73c9ba2d2.previews.dropboxusercontent.com/p/thumb/AC1obTfaglA0yASpSua5ovIbSibkv_vMyIihzF6zaccjuNcy-TpWNYrV8g4QuLSUrEJxbhQYnvvoquL6La5TES5wTpS-htK-j6quGtTYQlYsX2cu5bPltlpataQT932yY8EBkBdQiZp8mWbAHxZqoHUyIklCH1jTViIzdoBgl5Lsu2WQnxQAM1YUPsdqKlUkeHNtvlFM879meib29PLzzXm4P5hFze1oaIOqrg7ZryyH0TaVbs-8_arD4zpbA0T-PoiW2P7F_Q7i4JAEjVibY2YY1yaZxWgJPeLN54o2tQ3ciraS7s_9qQwQvh3V_S380mVsHolefbw3JZ1N21kziHCTmPdpbPKOJdx10ee95ejLqsBne_ssC-jMswS6efXAn-A/p.jpeg?is_prewarmed=true',
-    desc: 'Enjoy a nourishing meal and inspiring conversation with fellow attendees and industry leaders. A perfect moment to connect, exchange ideas, and refuel for the afternoon sessions.'
+    start: `${DAY}T18:00:00${Z}`,
+    end: `${DAY}T18:10:00${Z}`,
+    title: 'Get-in / Doors',
   },
   {
     id: 'ai',
-    start: `${DAY}T14:00:00${Z}`,
-    end: `${DAY}T15:00:00${Z}`,
-    title: '1. AI & Automation: Unlocking Opportunities for Black Women in Tech',
-    speaker: 'Furat Abdulle — Consultant, Avanade · Jane Waithira — Developer, SAP SE',
-    img: 'https://raw.githubusercontent.com/Lilian-CR/bgts-schedule/refs/heads/main/images/Furat_Abdulle-Jane_Waithira.jpg',
-    desc: 'With Furat Abdulle (Avanade) and Jane Waithira (SAP SE), learn how AI is reshaping industries and how Black women can gain the skills to lead this revolution. Discover accessible paths to upskilling and creating inclusive innovation.'
+    start: `${DAY}T20:30:00:00${Z}`,
+    end: `${DAY}T22:30:00${Z}`,
+    title: 'Pick-up Eunice at the Airport',
   },
   {
     id: 'mental',
-    start: `${DAY}T14:00:00${Z}`,
-    end: `${DAY}T15:00:00${Z}`,
-    title: '2. Resilience and Rising: Prioritising Mental Health in a Racist and Rising Fascist Society',
-    speaker: 'Edith Esong Enowbi — Founder, Roots2Roof Coaching',
-    img: 'https://cdn.prod.website-files.com/68406261f85bbcb0476c7540/685bb8c1240484e7801d8fc2_Edith%20Esong%20Enowbi.jpg',
-    desc: 'Edith Esong Enowbi explores why Black women in Europe must prioritise mental health in challenging times. Discover tools for healing, resilience, and confidence to thrive in an increasingly hostile social and political climate.'
-  },
+    start: `${DAY}T22:30:00${Z}`,
+    end: `${DAY}T23:30:00${Z}`,
+    title: 'Drive Eunice to the gig',
+   },
   {
     id: 'content',
-    start: `${DAY}T14:00:00${Z}`,
-    end: `${DAY}T15:00:00${Z}`,
-    title: '3. Content Creation & Building Influence: How Black Women Can Lead Industry Conversations on TikTok',
-    speaker: 'Amanda Uduku — Social Commerce Strategist & Former TikTok Shop Insider',
-    img: 'images/Amanda_Uduku.jpeg',
-    desc: 'Former TikTok insider Amanda Uduku reveals how Black women can build authentic influence in the creator economy. Learn to craft impactful content, grow audiences, and turn creativity into sustainable income on platforms like TikTok.'
-  },
+    start: `${DAY}T23:30:00${Z}`,
+    end: `${DAY}T23:40:00${Z}`,
+    title: 'Setting stage',
+    },
   {
     id: 'executive',
-    start: `${DAY}T15:00:00${Z}`,
-    end: `${DAY}T16:00:00${Z}`,
-    title: '1. Shattering the Glass Ceiling: Black Women Leading in Executive & Board Roles',
-    speaker: 'Dr. Audrey-Flore Ngomsik — Board Member and Brussels Policy Advisor',
-    img: 'https://cdn.prod.website-files.com/68406261f85bbcb0476c7540/68be85de6d671f8ef1cb4ef7_Dr%20Audrey-Flore%20Ngomsik%20(3)-min.jpg',
-    desc: 'Dr. Audrey-Flore Ngomsik shares strategies for advancing into executive and board leadership. Explore how inclusive governance, sustainability, and representation can redefine corporate culture and drive meaningful change across Europe.'
-  },
+    start: `${DAY}T23:40:00${Z}`,
+    end: `${DAY}T23:59:00${Z}`,
+    title: 'STAGE-TIME',
+   },
   {
     id: 'skills',
-    start: `${DAY}T15:00:00${Z}`,
-    end: `${DAY}T16:00:00${Z}`,
-    title: '2. Protect Ya Neck: Cybersecurity, Hacking & Owning Your Data',
-    speaker: 'Florence Mottay — VP & CISO, Zalando',
-    img: 'https://cdn.prod.website-files.com/68406261f85bbcb0476c7540/68be862a9cdf82cd18e08af8_Florence_Mottay_03.jpg',
-    desc: 'Florence Mottay, VP & CISO at Zalando, explains how cybersecurity is power. Learn to safeguard your digital identity, understand online threats, and see security as an essential leadership skill for the modern world.'
+    start: `${DAY}T23:59:00${Z}`,
+    end: `${DAY}T23:59:00${Z}`,
+    title: 'Drive to Hostel',
   },
-  {
-    id: 'cv',
-    start: `${DAY}T15:00:00${Z}`,
-    end: `${DAY}T16:00:00${Z}`,
-    title: '3. Foundational Skills: Crafting CVs, Applications & Nailing Interviews',
-    speaker: 'Ibtehal Hussein — Global Talent Acquisition Team Lead, HelloFresh & Adenike Adekunbi — Talent Acquisition Partner, Germany',
-    img: 'images/Ibtehal_Hussein-Adenike_Adekunbi.jpg',
-    desc: 'Ibtehal Hussein (HelloFresh) and Adenike Adekunbi guide you through crafting standout CVs and mastering interviews. Gain practical insights to navigate bias, showcase strengths, and confidently advance your career in tech.'
-  },
-  {
-    id: 'break2',
-    start: `${DAY}T16:00:00${Z}`,
-    end: `${DAY}T16:15:00${Z}`,
-    title: 'Afternoon Break & Networking',
-    img: 'https://media.gettyimages.com/id/1634161872/photo/young-adult-black-woman-having-coffee-break-at-the-office.jpg?s=612x612&w=0&k=20&c=SnVFYLo71c_VXX9zXk_TU5eme8f6d_ExAxH9rU4WHBw=',
-    desc: 'Grab a coffee, chat with peers, and get ready for the final panels of the day. A quick recharge before we close with inspiration and celebration.'
-  },
-  {
-    id: 'media',
-    start: `${DAY}T16:15:00${Z}`,
-    end: `${DAY}T17:00:00${Z}`,
-    title: 'Panel Discussion – Thriving in Digital Media: Black Women Leading the Future of Content and Innovation',
-    speaker: 'Sally Osei — Creator Manager, Zalando, Leanne Alie — Executive Producer and Podcast Leader, Jade Vanriel — Property and Lifestyle Content Creator & Oluwatoniloba Dreher Adenuga — Model, Content Creator & Poet',
-    img: 'images/Sally_Ose-Leanne_Alie-Jade_Vanriel-Dreher_Adenuga.jpg',
-    desc: 'Sally Osei, Leanne Alie, Jade Vanriel, and Oluwatoniloba Dreher Adenuga explore how Black women are shaping digital media and influencer culture. Learn how to build a creative career in a fast-evolving $800 billion global industry.'
-  },
-  {
-    id: 'closing',
-    start: `${DAY}T17:00:00${Z}`,
-    end: `${DAY}T17:30:00${Z}`,
-    title: 'Closing Keynote Talk',
-    speaker: 'Emamurho Ugherughe — Global Quality Lead, SAP AI Core Platform',
-    img: 'https://cdn.prod.website-files.com/68406261f85bbcb0476c7540/68c8322a9bfcdd3837d51543_IMG_2779.jpg',
-    desc: 'Emamurho Ugherughe (SAP AI Core Platform) closes the summit with a message of purpose and progress. Discover how leadership, innovation, and collaboration can drive inclusive technological change worldwide.'
-  },
-  {
-    id: 'afterparty',
-    start: `${DAY}T17:30:00${Z}`,
-    end: `${DAY}T19:00:00${Z}`,
-    title: 'The After-party!!!',
-    img: [
-      'https://media.gettyimages.com/id/1145839324/de/foto/teamapplaus-nach-treffen.jpg?s=612x612&w=0&k=20&c=DUXDVXxSIy5bD5srD04rXfwOibbsagjpNEgD79pqzaY=',
-      'https://t3.ftcdn.net/jpg/02/59/72/50/360_F_259725004_ZXZZe3fAcLY7e72W4cogM8JmLfVN11jQ.jpg'
-    ],
-    desc: 'End the day with music, drinks, and celebration! Build connections, share reflections, and dance together—because empowerment is also about joy, community, and collective energy. Join the movement. The Shift is here.'
-  }
 ];
 
 // Render Logic
