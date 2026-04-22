@@ -1,7 +1,7 @@
 // Helpers
 const $ = sel => document.querySelector(sel);
 const $$ = sel => Array.from(document.querySelectorAll(sel));
-const DAY = '2026-04-30', Z = '00:00';
+const DAY = '2026-04-30', Z = '-01:00';
 
 // Testing
 function getNowMs() {
