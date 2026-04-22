@@ -1,7 +1,7 @@
 // Helpers
 const $ = sel => document.querySelector(sel);
 const $$ = sel => Array.from(document.querySelectorAll(sel));
-const DAY = '2026-04-30', Z = '+01:00';
+const DAY = '2026-04-30', Z = '00:00';
 
 // Testing
 function getNowMs() {
@@ -69,7 +69,7 @@ const schedule = [
   },
   {
     id: 'ai',
-    start: `${DAY}T20:30:00:00${Z}`,
+    start: `${DAY}T20:30:00${Z}`,
     end: `${DAY}T22:30:00${Z}`,
     title: 'Pick-up Eunice at the Airport',
   },
@@ -95,7 +95,7 @@ const schedule = [
     id: 'skills',
     start: `${DAY}T23:59:00${Z}`,
     end: `${DAY}T23:59:00${Z}`,
-    title: 'Drive to Hostel',
+    title: 'VAN CALL - Drive to the Hostel',
   },
 ];
 
