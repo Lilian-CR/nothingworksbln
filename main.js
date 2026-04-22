@@ -1,7 +1,7 @@
 // Helpers
 const $ = sel => document.querySelector(sel);
 const $$ = sel => Array.from(document.querySelectorAll(sel));
-const DAY = '2026-04-30', Z = '+02:00';
+const Z = '+02:00';
 
 // Testing
 function getNowMs() {
@@ -23,79 +23,145 @@ function getNowMs() {
 const schedule = [
   
   {
+    id: 'day-warsaw',
+    type: 'day-banner',
+    start: `2026-04-30T00:00:00${Z}`,
+    end: `2026-04-30T00:01:00${Z}`,
+    title: 'Warsaw, Poland – Voodoo Club',
+    desc: 'Show Day'
+  },
+  {
     id: 'arrival',
-    start: `${DAY}T09:00:00${Z}`,
-    end: `${DAY}T09:30:00${Z}`,
+    start: `2026-04-30T09:00:00${Z}`,
+    end: `2026-04-30T09:30:00${Z}`,
     title: 'Van Pick-up',
     desc: 'Van pick-up at Tour Alarm.'
   },
   {
     id: 'fireside',
-    start: `${DAY}T09:45:00${Z}`,
-    end: `${DAY}T10:00:00${Z}`,
+    start: `2026-04-30T09:45:00${Z}`,
+    end: `2026-04-30T10:00:00${Z}`,
     title: 'Pick-up Mela',
     desc: 'Mela address.'
   },
   {
     id: 'wealth',
-    start: `${DAY}T10:15:00${Z}`,
-    end: `${DAY}T10:30:00${Z}`,
+    start: `2026-04-30T10:15:00${Z}`,
+    end: `2026-04-30T10:30:00${Z}`,
     title: 'Pick-up Lilian, Merch and Guitar Cab',
   },
   {
     id: 'break1',
-    start: `${DAY}T10:30:00${Z}`,
-    end: `${DAY}T13:30:00${Z}`,
+    start: `2026-04-30T10:30:00${Z}`,
+    end: `2026-04-30T13:30:00${Z}`,
     title: 'Travel - first half.',
   },
   {
     id: 'founders',
-    start: `${DAY}T13:30:00${Z}`,
-    end: `${DAY}T14:00:00${Z}`,
+    start: `2026-04-30T13:30:00${Z}`,
+    end: `2026-04-30T14:00:00${Z}`,
     title: 'Lunch Break',
     desc: 'Stop on the road on a place with oudoor seating area.'
   },
   {
     id: 'circle',
-    start: `${DAY}T14:00:00${Z}`,
-    end: `${DAY}T18:00:00${Z}`,
+    start: `2026-04-30T14:00:00${Z}`,
+    end: `2026-04-30T18:00:00${Z}`,
     title: 'Second half of the driving',
   },
   {
     id: 'lunch',
-    start: `${DAY}T18:00:00${Z}`,
-    end: `${DAY}T18:10:00${Z}`,
+    start: `2026-04-30T18:00:00${Z}`,
+    end: `2026-04-30T18:10:00${Z}`,
     title: 'Get-in / Doors',
   },
   {
     id: 'ai',
-    start: `${DAY}T20:30:00${Z}`,
-    end: `${DAY}T22:30:00${Z}`,
+    start: `2026-04-30T20:30:00${Z}`,
+    end: `2026-04-30T22:30:00${Z}`,
     title: 'Pick-up Eunice at the Airport',
   },
   {
     id: 'mental',
-    start: `${DAY}T22:30:00${Z}`,
-    end: `${DAY}T23:30:00${Z}`,
+    start: `2026-04-30T22:30:00${Z}`,
+    end: `2026-04-30T23:30:00${Z}`,
     title: 'Drive Eunice to the gig',
    },
   {
     id: 'content',
-    start: `${DAY}T23:30:00${Z}`,
-    end: `${DAY}T23:40:00${Z}`,
+    start: `2026-04-30T23:30:00${Z}`,
+    end: `2026-04-30T23:40:00${Z}`,
     title: 'Setting stage',
     },
   {
     id: 'executive',
-    start: `${DAY}T23:40:00${Z}`,
-    end: `${DAY}T23:59:00${Z}`,
+    start: `2026-04-30T23:40:00${Z}`,
+    end: `2026-04-30T23:59:00${Z}`,
     title: 'STAGE-TIME',
    },
   {
     id: 'skills',
-    start: `${DAY}T23:59:00${Z}`,
-    end: `${DAY}T23:59:00${Z}`,
+    start: `2026-04-30T23:59:00${Z}`,
+    end: `2026-04-30T23:59:00${Z}`,
     title: 'VAN CALL - Drive to the Hostel',
+  },
+
+  {
+    id: 'day-berlin',
+    type: 'day-banner',
+    start: `2026-05-01T00:00:00${Z}`,
+    end: `2026-05-01T00:01:00${Z}`,
+    title: 'Berlin, Germany – Cassiopeia Club',
+    desc: 'Show Day'
+  },
+  {
+    id: 'arrival-may1',
+    start: `2026-05-01T09:00:00${Z}`,
+    end: `2026-05-01T09:30:00${Z}`,
+    title: 'Van Pick-up',
+    desc: 'Van pick-up at Tour Alarm.'
+  },
+  {
+    id: 'fireside-may1',
+    start: `2026-05-01T09:45:00${Z}`,
+    end: `2026-05-01T10:00:00${Z}`,
+    title: 'Pick-up Mela',
+    desc: 'Mela address.'
+  },
+  {
+    id: 'wealth-may1',
+    start: `2026-05-01T10:15:00${Z}`,
+    end: `2026-05-01T10:30:00${Z}`,
+    title: 'Pick-up Lilian, Merch and Guitar Cab',
+  },
+
+  {
+    id: 'day-dresden',
+    type: 'day-banner',
+    start: `2026-05-02T00:00:00${Z}`,
+    end: `2026-05-02T00:01:00${Z}`,
+    title: 'Dresden, Germany – Chemiefabrik Club',
+    desc: 'Show Day'
+  },
+  {
+    id: 'arrival-may2',
+    start: `2026-05-02T09:00:00${Z}`,
+    end: `2026-05-02T09:30:00${Z}`,
+    title: 'Van Pick-up',
+    desc: 'Van pick-up at Tour Alarm.'
+  },
+  {
+    id: 'fireside-may2',
+    start: `2026-05-02T09:45:00${Z}`,
+    end: `2026-05-02T10:00:00${Z}`,
+    title: 'Pick-up Mela',
+    desc: 'Mela address.'
+  },
+  {
+    id: 'wealth-may2',
+    start: `2026-05-02T10:15:00${Z}`,
+    end: `2026-05-02T10:30:00${Z}`,
+    title: 'Pick-up Lilian, Merch and Guitar Cab',
   },
 ];
 
@@ -116,6 +182,16 @@ function renderList(mode = 'all') {
   const html = filtered.map(s => {
     const isCurrent = within(now, s.start, s.end);
     const isPast = past(now, s.end);
+
+    if (s.type === 'day-banner') {
+      return `
+        <article id="${s.id}" class="day-banner">
+          <div class="day-banner-inner">
+            <h2>${s.title}</h2>
+          </div>
+        </article>`;
+    }
+
     const cls = isCurrent ? 'session current' : isPast ? 'session past' : 'session';
 
     let imgHTML = '';
@@ -133,7 +209,7 @@ function renderList(mode = 'all') {
         </div>
         <small>${fmt(s.start)}–${fmt(s.end)}${s.speaker ? ` · ${s.speaker}` : ''}</small>
         <div class="session-body">
-          <p class="desc">${s.desc}</p>
+          <p class="desc">${s.desc || ''}</p>
           ${imgHTML}
         </div>
       </article>`;
@@ -142,7 +218,7 @@ function renderList(mode = 'all') {
   $('#schedule').innerHTML = html;
 
   // Accordion logic — only one expanded
-  $$('#schedule article').forEach(el => {
+  $$('#schedule article.session').forEach(el => {
     const btn = el.querySelector('.toggle-arrow');
     const header = el.querySelector('.session-header');
 
@@ -169,7 +245,7 @@ function renderList(mode = 'all') {
 // Banner
 function renderBanner(now) {
   const current = schedule.find(s => within(now, s.start, s.end));
-  const next = schedule.find(s => new Date(s.start) > now);
+  const next = schedule.find(s => new Date(s.start).getTime() > now);
   const banner = $('#liveBanner');
 
   if (current) {
@@ -177,9 +253,10 @@ function renderBanner(now) {
     return;
   }
 
-  const summitStart = new Date(`${DAY}T00:00:00${Z}`).getTime();
-  const hourSwitch = new Date(`${DAY}T00:01:00${Z}`).getTime();
-  const minuteSwitch = new Date(`${DAY}T08:00:00${Z}`).getTime();
+  const firstDay = schedule[0].start.slice(0, 10);
+  const summitStart = new Date(`${firstDay}T00:00:00${Z}`).getTime();
+  const hourSwitch = new Date(`${firstDay}T00:01:00${Z}`).getTime();
+  const minuteSwitch = new Date(`${firstDay}T08:00:00${Z}`).getTime();
 
   if (next) {
     const diffMs = new Date(next.start).getTime() - now;
