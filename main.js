@@ -48,7 +48,7 @@ const schedule = [
     id: 'next-2_day1',
     start: `2026-04-30T10:15:00${Z}`,
     end: `2026-04-30T10:30:00${Z}`,
-    title: 'Pick-up Lilian, Merch and Guitar Cab',
+    title: 'Pick-up Lilian, Anna, Merch and Guitar Cab',
   },
   {
     id: 'next-3_day1',
