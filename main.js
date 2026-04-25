@@ -77,8 +77,8 @@ const schedule = [
   },
   {
     id: 'next-7_day1',
-    start: `2026-04-30T20:30:00${Z}`,
-    end: `2026-04-30T22:30:00${Z}`,
+    start: `2026-04-30T22:20:00${Z}`,
+    end: `2026-04-30T23:15:00${Z}`,
     title: 'Pick-up Eunice at the Airport',
   },
   {
