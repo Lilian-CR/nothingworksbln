@@ -38,7 +38,7 @@ const schedule = [
     desc: 'Van pick-up at Tour Alarm.'
   },
   {
-    id: 'next_day1',
+    id: 'next-1_day1',
     start: `2026-04-30T09:45:00${Z}`,
     end: `2026-04-30T10:00:00${Z}`,
     title: 'Pick-up Mela',
@@ -96,13 +96,13 @@ const schedule = [
   {
     id: 'next-10_day1',
     start: `2026-04-30T23:40:00${Z}`,
-    end: `2026-04-30T23:59:00${Z}`,
+    end: `2026-05-01T00:00:00${Z}`,
     title: 'STAGE-TIME',
    },
   {
-    id: 'next-1_day1',
-    start: `2026-04-30T23:59:00${Z}`,
-    end: `2026-04-30T23:59:00${Z}`,
+    id: 'next-11_day1',
+    start: `2026-05-01T00:10:00${Z}`,
+    end: `2026-05-01T00:30:00${Z}`,
     title: 'VAN CALL - Drive to the Hostel',
   },
 
