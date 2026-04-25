@@ -61,7 +61,7 @@ const schedule = [
     start: `2026-04-30T13:30:00${Z}`,
     end: `2026-04-30T14:00:00${Z}`,
     title: 'Lunch Break',
-    desc: 'Stop on the road on a place with oudoor seating area.'
+    desc: 'Stop on the road at a place with oudoor seating area.'
   },
   {
     id: 'next-5_day1',
