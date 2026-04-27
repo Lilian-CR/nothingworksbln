@@ -89,14 +89,14 @@ const schedule = [
    },
   {
     id: 'next-9_day1',
-    start: `2026-04-30T23:30:00${Z}`,
-    end: `2026-04-30T23:40:00${Z}`,
-    title: 'Setting stage',
+    start: `2026-04-30T23:15:00${Z}`,
+    end: `2026-04-30T23:30:00${Z}`,
+    title: 'Setting stage/Line-check',
     },
   {
     id: 'next-10_day1',
-    start: `2026-04-30T23:40:00${Z}`,
-    end: `2026-05-01T00:00:00${Z}`,
+    start: `2026-04-30T23:30:00${Z}`,
+    end: `2026-04-30T23:55:00${Z}`,
     title: 'STAGE-TIME',
    },
   {
@@ -199,15 +199,15 @@ const schedule = [
   },
   {
     id: 'next-2_day3',
-    start: `2026-05-02T20:00:00${Z}`,
-    end: `2026-05-02T20:10:00${Z}`,
-    title: 'LINE-CHECK',
-  },
-  {
-    id: 'next-3_day3',
     start: `2026-05-02T16:00:00${Z}`,
     end: `2026-05-02T16:00:00${Z}`,
     title: 'DOORS - OPENING',
+  },
+  {
+    id: 'next-3_day3',
+    start: `2026-05-02T20:00:00${Z}`,
+    end: `2026-05-02T20:10:00${Z}`,
+    title: 'LINE-CHECK',
   },
     {
     id: 'next-4_day3',
