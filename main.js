@@ -213,7 +213,7 @@ const schedule = [
     {
     id: 'next-3_day3',
     start: `2026-05-02T18:00:00${Z}`,
-    end: `2026-05-02T18:10:00${Z}`,
+    end: `2026-05-02T18:00:00${Z}`,
     title: 'DINNER - FIRST BAND',
   },
   {
