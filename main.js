@@ -160,8 +160,8 @@ const schedule = [
   },
   {
     id: 'next-5_day2',
-    start: `2026-05-01T17:00:00${Z}`,
-    end: `2026-05-01T17:00:00${Z}`,
+    start: `2026-05-01T18:00:00${Z}`,
+    end: `2026-05-01T18:00:00${Z}`,
     title: 'Sound-Check',
   },
     {
