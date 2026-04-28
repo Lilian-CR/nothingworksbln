@@ -144,7 +144,7 @@ const schedule = [
     id: 'next-2_day2',
     start: `2026-05-01T14:00:00${Z}`,
     end: `2026-05-01T17:00:00${Z}`,
-    title: 'Drive to Szczecin',
+    title: 'Second half of the driving',
   },
   { 
   id: 'next-3_day2',
