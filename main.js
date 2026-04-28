@@ -210,20 +210,26 @@ const schedule = [
     end: `2026-05-02T16:00:00${Z}`,
     title: 'DOORS - OPENING',
   },
-  {
+    {
     id: 'next-3_day3',
+    start: `2026-05-02T18:00:00${Z}`,
+    end: `2026-05-02T18:10:00${Z}`,
+    title: 'DINNER - FIRST BAND',
+  },
+  {
+    id: 'next-4_day3',
     start: `2026-05-02T20:00:00${Z}`,
     end: `2026-05-02T20:10:00${Z}`,
     title: 'LINE-CHECK',
   },
     {
-    id: 'next-4_day3',
+    id: 'next-5_day3',
     start: `2026-05-02T20:10:00${Z}`,
     end: `2026-05-02T20:40:00${Z}`,
     title: 'STAGE-TIME',
   },
   {
-    id: 'next-5_day3',
+    id: 'next-6_day3',
     start: `2026-05-02T21:00:00${Z}`,
     end: `2026-05-03T00:30:00${Z}`,
     title: 'Drive to Berlin with a stop in Dresden for train/Bus to Viena',
