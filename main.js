@@ -196,6 +196,7 @@ const schedule = [
     start: `2026-05-02T11:10:00${Z}`,
     end: `2026-05-02T15:30:00${Z}`,
     title: 'Drive to Zwickau',
+    desc: 'https://maps.app.goo.gl/9Fd8u8fGAmbCipPR8' 
   },
 {
     id: 'next-1_day3',
