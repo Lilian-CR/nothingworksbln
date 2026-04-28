@@ -148,26 +148,32 @@ const schedule = [
   },
   { 
   id: 'next-3_day2',
-    start: `2026-05-01T17:00:00${Z}`,
-    end: `2026-05-01T17:00:00${Z}`,
+    start: `2026-05-01T16:300:00${Z}`,
+    end: `2026-05-01T16:30:00${Z}`,
     title: 'GET - IN',
     },
   {
     id: 'next-4_day2',
     start: `2026-05-01T17:00:00${Z}`,
     end: `2026-05-01T17:00:00${Z}`,
-    title: 'Sound-check?',
+    title: 'DINNER',
   },
-    {
+  {
     id: 'next-5_day2',
     start: `2026-05-01T17:00:00${Z}`,
     end: `2026-05-01T17:00:00${Z}`,
-    title: 'STAGE TIME?',
+    title: 'Sound-Check',
+  },
+    {
+    id: 'next-6_day2',
+    start: `2026-05-01T22:15:00${Z}`,
+    end: `2026-05-01T22:15:00${Z}`,
+    title: 'STAGE TIME',
   },
 {
-    id: 'next-5_day2',
-    start: `2026-05-01T21:30:00${Z}`,
-    end: `2026-05-01T23:30:00${Z}`,
+    id: 'next-7_day2',
+    start: `2026-05-01T23:15:00${Z}`,
+    end: `2026-05-02T01:00:00${Z}`,
     title: 'Drive to Berlin',
   },
   {
