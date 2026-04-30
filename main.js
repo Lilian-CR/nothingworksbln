@@ -186,15 +186,15 @@ const schedule = [
   },
   {
     id: 'departure-3',
-    start: `2026-05-02T11:00:00${Z}`,
-    end: `2026-05-02T11:10:00${Z}`,
+    start: `2026-05-02T10:00:00${Z}`,
+    end: `2026-05-02T10:10:00${Z}`,
     title: 'VAN-CALL',
     desc: 'Go to the van.'
   },
    {
     id: 'next_day3',
-    start: `2026-05-02T11:10:00${Z}`,
-    end: `2026-05-02T15:30:00${Z}`,
+    start: `2026-05-02T10:10:00${Z}`,
+    end: `2026-05-02T15:00:00${Z}`,
     title: 'Drive to Zwickau',
     desc: 'https://maps.app.goo.gl/9Fd8u8fGAmbCipPR8' 
   },
