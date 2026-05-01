@@ -164,14 +164,20 @@ const schedule = [
     end: `2026-05-01T18:00:00${Z}`,
     title: 'Sound-Check',
   },
-    {
+  {
     id: 'next-6_day2',
     start: `2026-05-01T20:45:00${Z}`,
     end: `2026-05-01T20:45:00${Z}`,
     title: 'STAGE TIME',
   },
-{
+    {
     id: 'next-7_day2',
+    start: `2026-05-01T19:00:00${Z}`,
+    end: `2026-05-01T19:00:00${Z}`,
+    title: 'DOORS',
+  },
+{
+    id: 'next-8_day2',
     start: `2026-05-01T22:00:00${Z}`,
     end: `2026-05-01T23:45:00${Z}`,
     title: 'Drive to Berlin',
