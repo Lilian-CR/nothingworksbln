@@ -116,8 +116,8 @@ const schedule = [
   },
   {
     id: 'break-fast',
-    start: `2026-05-01T09:30:00${Z}`,
-    end: `2026-05-01T09:55:00${Z}`,
+    start: `2026-05-01T09:10:00${Z}`,
+    end: `2026-05-01T09:50:00${Z}`,
     title: 'Breakfast',
     desc: 'Hostel Kitchen.'
   },
