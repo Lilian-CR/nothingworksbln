@@ -2,7 +2,7 @@
 :root {
   --yellow: #f0dc9b;
   --cream: #f4f0e9;
-  --gray: #000000;
+  --black: #000000;
   --text: #111;
   --white: #fff;
   --muted: #ddd;
@@ -112,7 +112,7 @@ a:focus-visible {
 
 /* NAVBAR — desktop default */
 nav {
-  background-color: var(--gray);
+  background-color: var(--black);
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -128,7 +128,7 @@ nav {
 
 nav .navbar-nav a,
 #tour a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
