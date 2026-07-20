@@ -135,7 +135,7 @@ nav .navbar-nav a,
 
 nav .navbar-nav a:hover,
 #tour a:hover {
-  color: var(--muted);
+  color: var(--gray);
   text-decoration: underline;
 }
 
