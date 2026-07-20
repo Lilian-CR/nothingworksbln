@@ -1,7 +1,7 @@
 /* Design tokens */
 :root {
   --yellow: #f0dc9b;
-  --cream: #f4f0e9;
+  --gray: #a39e9d;
   --black: #000000;
   --text: #111;
   --white: #fff;
@@ -172,7 +172,7 @@ nav .navbar-nav a:hover,
 
 /* HERO */
 #billboard {
-  background-color: var(--cream);
+  background-color: var(--gray);
   text-align: center;
   padding: 5em 0;
 }
@@ -204,11 +204,11 @@ nav .navbar-nav a:hover,
 }
 
 #music {
-  background-color: var(--cream);
+  background-color: var(--gray);
 }
 
 #ep {
-  background-color: var(--cream);
+  background-color: var(--gray;
 }
 
 #live {
@@ -216,7 +216,7 @@ nav .navbar-nav a:hover,
 }
 
 #tour {
-  background-color: var(--cream);
+  background-color: var(--gray);
 }
 
 /* ---------- MUSIC EMBED ---------- */
