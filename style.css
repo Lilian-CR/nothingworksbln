@@ -15,9 +15,16 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
+  min-height: 100%;
+
+  background-color: #1a1a1a;
+  background-image: url("images/background.webp");
+  background-repeat: repeat-y;
+  background-position: top center;
+
   font-family: Arial, sans-serif;
-  background-color: var(--yellow);
   color: var(--text);
   scroll-behavior: smooth;
 }
